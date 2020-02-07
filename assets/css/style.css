@@ -53,10 +53,15 @@ img{
 .verticalSocial{
     position: absolute;
     right:0;
-    top:60%;
+    top:400px;
+    z-index: 999;
+}
+.verticalSocial li{
+    margin-bottom: 19px;
 }
 .verticalSocial li a{
     color:white;
+    font-size:16px;
 }
 .loginbtn{
     padding:12px 41px;
@@ -82,6 +87,22 @@ display: block;
     position: relative;
     padding-right: 15px;
     padding-left: 15px;
+}
+.dropdown-toggle::after{
+    content:"\EA45";
+    font-family:LineIcons;
+    border:0;
+    font-size:8px;
+    left: -1px;
+    position: absolute;
+    bottom: 9px;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu{
+    text-align: right;
+}
+.dropdown-item:hover{
+background-color: #A30F5C;
+color:#F77737;
 }
 .nav-link:before{
     content:"";
@@ -361,6 +382,17 @@ padding-top:13px;
 }
 .newsSection{
     margin-top:80px;
+    padding:10px;
+    animation: all .5s;
+    border-radius: 6px;
+}
+.newsSection:hover{
+    box-shadow: 2px 2px 5px 0 rgba(47, 46, 52, 0.12);
+    animation: all .5s;
+}
+.newsSection:hover .newsTitle{
+  color:#f7941e;
+  transition: all .5s;
 }
 .newsImg{
     width:10%;
@@ -605,19 +637,19 @@ margin-left:25px;
     color:white;
     font-size:20px;
 }
-.footerSocial li i.fa-twitter:hover{
+  i.fa-twitter:hover{
     color:#00acee;
 }
-.footerSocial li i.fa-facebook-f:hover{
+i.fa-facebook-f:hover{
     color:#3b5998;
 }
 .noBorder{
     border:0;
 }
-.footerSocial li i.fa-instagram:hover{
+ i.fa-instagram:hover{
               color: #F77737 ;
 }
-.footerSocial li i.fa-youtube:hover{
+ i.fa-youtube:hover{
     color: #c4302b;
 }
 .twitterUpdates li{
@@ -759,7 +791,11 @@ color:white;
     height:32px;
     left:50%;
     bottom:10%;
-
+    transition: all .5s;
+}
+.scroll:hover{
+    transform: scale(1.1);
+    transition: all .5s;
 }
 .scroll img{
 height:100%;

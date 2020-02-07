@@ -41,21 +41,21 @@ jQuery(function ($) {
             });
             }
             $(document).on("scroll", onScroll);
-            $('.navbar-collapse ul li a').on('click', function () {
-              if($(this).attr('href')=="TestiMonials"){
-                $('html, body').animate({ scrollTop: $(this.hash).offset().top +50 }, 1000);
-                $('.navbar-collapse.collapse.in').removeClass('in');
+/*           $('.navbar-collapse ul li a').on('click', function () {
+  if($(this).attr('href')=="TestiMonials"){
+    $('html, body').animate({ scrollTop: $(this.hash).offset().top +50 }, 1000);
+    $('.navbar-collapse.collapse.in').removeClass('in');
 
-              }
-             
-              else{
-                $('html, body').animate({ scrollTop: $(this.hash).offset().top-50 }, 1000);
-                $('.navbar-collapse.collapse.in').removeClass('in');
+  }
+ 
+  else{
+    $('html, body').animate({ scrollTop: $(this.hash).offset().top-50 }, 1000);
+    $('.navbar-collapse.collapse.in').removeClass('in');
 
-              }
-            
-              return false;
-            });
+  }
+
+  return false;
+}); */
            
             $('.up a').on('click', function () {
               $('html, body').animate({ scrollTop: $(this.hash).offset().top  }, 1000);
