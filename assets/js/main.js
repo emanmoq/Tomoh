@@ -1,60 +1,6 @@
 jQuery(function ($) {
 
   new WOW().init();
-        filter_container = $("#projectGallery");
-  
-        filter_container.children().css('position', 'relative');
-        filter_container.masonry({
-          singleMode: true,
-          itemSelector: '.galleryItem:not(.hide)',
-          animate: true,
-          animationOptions: { duration: 800, queue: false }
-        });
-        $(window).resize(function () {
-          var temp_width = filter_container.children().filter(':first')();
-          filter_container.masonry({
-            columnWidth: temp_width,
-            singleMode: true,
-            itemSelector: '.galleryItem:not(.hide)',
-            animate: true,
-            animationOptions: { duration: 800, queue: false }
-          });
-        });
-        $('ul#projectTabs a').click( function () {
-  
-          $(this).addClass("active");
-          $(this).parents("li").siblings().children("a").removeClass("active");
-       
-  
-          var select_filter = $(this).attr('data-value');
-  
-          if (select_filter == "all" || $(this).parent().index() == 0) {
-            filter_container.children().each(function () {
-              if ($(this).hasClass('hide')) {
-                $(this).removeClass('hide');
-                $(this).fadeIn();
-              }
-            });
-          } else {
-            filter_container.children().not('.' + select_filter).each(function () {
-              if (!$(this).hasClass('hide')) {
-                $(this).addClass('hide');
-                $(this).fadeOut();
-              }
-            });
-            filter_container.children('.' + select_filter).each(function () {
-              if ($(this).hasClass('hide')) {
-                $(this).removeClass('hide');
-                $(this).fadeIn();
-              }
-            });
-          }
-  
-          filter_container.masonry();
-  
-        });
-
-
     
         $(".nav-link").click(function(){
           $(".nav-link").removeClass("active");
@@ -114,75 +60,52 @@ jQuery(function ($) {
             $('.up a').on('click', function () {
               $('html, body').animate({ scrollTop: $(this.hash).offset().top  }, 1000);
             });
+            $('.heroSlider').owlCarousel({
+              autoplay:true,
+              loop:true,
+              margin:30,
+              nav:true,
+              dots:true,
+              rtl:true,
+              items:1,
+              navText :['<i class="lni-chevron-right"></i>','<i class="lni-chevron-left"></i>'],
+            });
             setTimeout(function(){
-              $('.TestiMonialsCarusel').owlCarousel({
-                loop:true,
-                margin:20,
-                nav:true,
-                dots:false,
-                navText :['<i class="lni-chevron-left"></i>','<i class="lni-chevron-right"></i>'],
-              responsive:{
-              0:{
-                items:1
-              },
-              600:{
-                items:2
-              },
-              1000:{
-                items:2
-              }
-              }
-              });
-              $('.ourTeamCarousel').owlCarousel({
-                loop:true,
-                margin:20,
-                nav:true,
-                animateIn: 'flipInX',
-                navText :['<i class="lni-chevron-left"></i>','<i class="lni-chevron-right"></i>'],
-
-              responsive:{
-              0:{
-                items:1
-              },
-              600:{
-                items:2
-              },
-              1000:{
-                items:4
-              },
-             
-              }
-              });
-              $('.BlogCarousel').owlCarousel({
-                loop:true,
-                margin:20,
-                nav:true,
-              responsive:{
-              0:{
-                items:1
-              },
-              600:{
-                items:2
-              },
-              1000:{
-                items:3
-              }
-              }
-              });
-              $('.ConsultCarousel').owlCarousel({
+        
+              $('.partnerSlider').owlCarousel({
                 autoplay:true,
                 loop:true,
-                margin:40,
+                margin:70,
                 dots:true,
+                rtl:true,
               responsive:{
               0:{
-                items:3
+                items:1
               },
               600:{
-                items:4
+                items:2
               },
               1000:{
-                items:6
+                items:4
+              }
+              }
+              });
+              $('.gallerySlider').owlCarousel({
+                autoplay:true,
+                loop:true,
+                margin:17,
+                nav:true,
+                rtl:true,
+                navText :['<i class="fas fa-chevron-right"></i>','<i class="fas fa-chevron-left"></i>'],
+              responsive:{
+              0:{
+                items:1
+              },
+              600:{
+                items:2
+              },
+              1000:{
+                items:4
               }
               }
               });
