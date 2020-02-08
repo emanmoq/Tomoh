@@ -63,6 +63,43 @@ img{
     color:white;
     font-size:16px;
 }
+.lang{
+    display: inline-block;
+    margin-right:38px;
+}
+.loginLang i{
+    font-size:16px;
+    color:white;
+display: inline-block;
+margin-left:7px;
+}
+.langdrop{
+    font-size:13px;
+    color:white;
+    position: relative;
+
+}
+.langdrop.dropdown-toggle::after{
+    left: -16px;
+    position: absolute;
+    bottom: 3px;
+}
+.langdrop.dropdown-toggle:hover,.langdrop.dropdown-toggle:hover .loginLang i{
+    color:#f7941e;
+}
+.lang .dropdown-menu{
+    background-color: transparent;
+    border:0;
+}
+.dropdown-toggle:focus{
+    color:#f7941e
+}
+.langdrop .dropdown-menu .dropdown-item{
+    color:white;
+    font-size:14px;
+    padding:5px;
+    font-family: a-jannat-lt;
+}
 .loginbtn{
     padding:12px 41px;
     text-align: center;
@@ -74,7 +111,7 @@ img{
   cursor: pointer;
 text-align: left;
 position: relative;
-display: block;
+display: inline-block;
 }
 .loginbtn:hover{
     background-color:transparent;
