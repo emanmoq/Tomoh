@@ -20,11 +20,13 @@
 </head>
 
 <body>
-
+  <div class="overlay">
+          
+  </div>
   <div class="background">
     <img src="assets/images/sliderBG.jpg" alt="">
   </div>
-  <div class="topHeader d-md-block d-lg-block d-none">
+  <div class="topHeader d-md-none d-lg-block d-none">
     <div class="container">
       <div class="row">
         <div class="col-md-12 clearfix">
@@ -49,43 +51,95 @@
     </div>
   </div>
   <header>
-
-    <div class="container">
-      <div class="mobileNav d-lg-none d-md-none d-block clearfix">
-        <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <div class="mobileMenu"><i></i><i></i><i></i></div>
-        </button>
-      </div>
-      <div class="logo float-left d-lg-none d-md-none d-block">
+    <div class="mobileNav d-lg-none d-md-block d-block clearfix">
+      <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="mobileMenu"><i></i><i></i><i></i></div>
+      </button>
+      <div class="logo float-left">
         <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
       </div>
-      <div class="verticalSocial">
-        <ul>
-          <li>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-          </li>
+      <nav class="navbar navbar-expand-lg clearfix d-md-block d-lg-none">
+       
+        <div class="collapse navbar-collapse flex-row-reverse float-left" id="navbarNav">
 
-          <li>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </li>
+          <button type="button" class="close float-left" data-dismiss="collapse" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <ul class="navbar-nav navbar-center ">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">الرئيسية </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">تطوع معنا
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">عائلتنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">خدماتنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">الفعاليات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">الأخبار</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="media" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">المركز الاعلامي
+              </a>
+              <div class="dropdown-menu" aria-labelledby="media">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">شركاؤنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">اتصل بنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> المدونة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> أكاديمية طموح</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> طموح ستور</a>
+            </li>
+          </ul>
+          <div class="loginLang">
+            <a class="loginbtn btn"> دخول</a>
+            <div class="lang">
 
+              <a class="langdrop dropdown-toggle" href="#" id="langDropDown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false"><i class="fas fa-globe-americas"></i> EN </a>
+              <div class="dropdown-menu" aria-labelledby="langDropDown">
+                <a class="dropdown-item" href="#">عربي</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
 
-        </ul>
-      </div>
+    </div>
+    <div class="container">
       <div class="row ">
- 
-        <nav class="navbar navbar-expand-lg clearfix">
-          <div class="collapse navbar-collapse flex-row-reverse float-left" id="navbarNav">
-            <button type="button" class="close d-block d-lg-none d-md-none" data-dismiss="collapse" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+        <nav class="navbar navbar-expand-lg clearfix " id="descktopMenu">
+          <div class="collapse navbar-collapse flex-row-reverse float-left">
+
             <ul class="navbar-nav navbar-center ">
               <li class="nav-item">
                 <a class="nav-link active" href="index.html">الرئيسية </a>
@@ -142,13 +196,30 @@
             </ul>
           </div>
         </nav>
-
-
       </div>
     </div>
   </header>
   <section class="heroSec">
     <div class="container">
+      <div class="verticalSocial">
+        <ul>
+          <li>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+
+          <li>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+
+
+        </ul>
+      </div>
       <div class="row">
         <div class="col-md-1">
 
@@ -212,7 +283,7 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-6 col-lg-6">
           <div class="box wow animate jackInTheBox" style="animation-delay:.2s; animation-duration: 1s;">
 
             <div class="boxImg zoomIn wow animate" style="animation-delay:.4s; animation-duration: .5s;">
@@ -229,7 +300,7 @@
             <a href="#" class="btn readMore">اقرأ المزيد</a>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-lg-4 col-md-6">
           <div class="box wow animate jackInTheBox" style="animation-delay:.6s; animation-duration: 1.4s;">
 
             <div class="boxImg zoomIn wow animate" style="animation-delay:.8s; animation-duration: .5s;">
@@ -247,7 +318,7 @@
             <a href="#" class="btn readMore">اقرأ المزيد</a>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-lg-4 col-md-6">
           <div class="box wow animate jackInTheBox" style="animation-delay:.8s; animation-duration: 1.6s;">
 
             <div class="boxImg zoomIn wow animate" style="animation-delay:1s; animation-duration: .5s;">
@@ -330,7 +401,7 @@
               النص العربى</p>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-lg-6 col-md-12">
           <div class="newsSection rotateInUpLeft wow animated" style="animation-delay:.6s; animation-duration: 1s;">
             <div class="newsHeader clearfix">
               <div class="newsImg float-right">
@@ -350,7 +421,7 @@
 
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-lg-6 col-md-12">
           <div class="newsSection slideInDown wow " style="animation-delay:.8s; animation-duration: 1.2s;">
             <div class="newsHeader clearfix">
               <div class="newsImg float-right">
@@ -370,7 +441,7 @@
 
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-lg-6 col-md-12">
           <div class="newsSection slideInDown wow" style="animation-delay:1s; animation-duration: 1.4s;">
             <div class="newsHeader clearfix">
               <div class="newsImg float-right">
@@ -390,7 +461,7 @@
 
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-lg-6 col-md-12">
           <div class="newsSection slideInDown  wow" style="animation-delay:1.2s; animation-duration: 1.6s;">
 
             <div class="newsHeader clearfix">
@@ -417,7 +488,7 @@
   <section id="video">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-md-3 text-center">
+        <div class=" col-lg-3 col-md-6 text-center">
           <div class="border-1 zoomIn wow" style="animation-delay:.2s; animation-duration: 1s;">
             <div class="border-2">
               <span class="showVideo"><a href="https://youtu.be/b2Vl9RAR5Xg"></a><i class="lni-play"></i></a></span>
@@ -545,7 +616,7 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-md-4 clearfix">
+        <div class="col-lg-4 col-md-6 clearfix">
           <div class="footerSec ">
             <div class="footerLogo">
               <img src="assets/images/logo.png" alt="">
@@ -577,7 +648,7 @@
           </div>
 
         </div>
-        <div class="col-md-4">
+        <div class="col-lg-4 col-md-6 ">
           <div class="footerSec">
             <h4> خريطة الموقع</h4>
             <ul class="footerList links text-center">
@@ -612,8 +683,8 @@
           <div class="vl">
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="footerSec noBorder">
+        <div class="col-lg-4 col-md-6 clearfix">
+          <div class="footerSec">
             <h4> تحديثات تويتر </h4>
             <ul class="footerList twitterUpdates">
               <li>
@@ -679,7 +750,7 @@
       </div>
 
     </div>
-<!--    <div class="up">
+    <!--    <div class="up">
       <a href="#heroSection"><i class="fas fa-chevron-up"></i></a>
     </div>-->
     <div class="copyRight text-center">

@@ -47,13 +47,13 @@ img{
     padding-bottom: 20px;
     width:100%;
 }
-.topHeader .container{
+.heroSec .container{
     position: relative;
 }
 .verticalSocial{
     position: absolute;
     right:0;
-    top:400px;
+    top:60%;
     z-index: 999;
 }
 .verticalSocial li{
@@ -66,6 +66,13 @@ img{
 .lang{
     display: inline-block;
     margin-right:38px;
+    position: relative;
+}
+.topHeader .lang .dropdown-item{
+    color:white;
+}
+.topHeader .lang .dropdown-item:hover{
+    background-color:transparent;
 }
 .loginLang i{
     font-size:16px;
@@ -90,15 +97,26 @@ margin-left:7px;
 .lang .dropdown-menu{
     background-color: transparent;
     border:0;
+    right:0;
+    text-align: right;
+}
+.lang .dropdown-menu{
+    color:white;
 }
 .dropdown-toggle:focus{
     color:#f7941e
 }
-.langdrop.dropdown-menu .dropdown-item{
+.lang .dropdown-menu .dropdown-item{
     color:white;
     font-size:14px;
     padding:5px;
     font-family: a-jannat-lt;
+}
+.scrollNav .navbar-expand-lg .navbar-nav .dropdown-menu{
+background-color:#97004E
+}
+.scrollNav .navbar-expand-lg .navbar-nav .dropdown-menu .dropdown-item{
+    color:white;
 }
 .loginbtn{
     padding:12px 41px;
@@ -125,6 +143,19 @@ display: inline-block;
     padding-right: 15px;
     padding-left: 15px;
 }
+.scrollNav {
+    top: 0 !important;
+    z-index: 555;
+    animation-duration: 1s;
+    background: #97004e;
+    position: fixed !important;
+    box-shadow: rgba(0, 0, 0, 0.1) 2px 3px 20px 3px;
+    transition: 1s all;
+    left: 0;
+    width:100%;
+    right:0;
+    padding:10px 0;
+}
 .dropdown-toggle::after{
     content:"\EA45";
     font-family:LineIcons;
@@ -139,7 +170,7 @@ display: inline-block;
 }
 .dropdown-item:hover{
 background-color: #A30F5C;
-color:#F77737;
+color:#F77737 !important;
 }
 .nav-link:before{
     content:"";
@@ -931,10 +962,14 @@ textarea.form-control {
     color:rgba(152, 1, 78);
     box-shadow: 0 2px 30px 0 rgba(152, 1, 78, 0.3);
 }
+.mobileNav {
+    width: 100%;
+    padding: 0 20px;
+}
 .mobileMenu{
     cursor: pointer;
-    width: 30px;
-    height: 25px;
+    width: 25px;
+    height: 17px;
     margin: auto;
 }
 button.navbar-toggler {
@@ -944,7 +979,7 @@ button.navbar-toggler {
     cursor: pointer;
     border-radius: 0;
     opacity: .7;
-    border:1px solid white;
+    border:1px solid #f7941e;
     text-align: center;
 
 }
@@ -1013,6 +1048,38 @@ button.navbar-toggler {
         100% {
           transform: translateY(-9px) rotate(135deg); } }
 @media(min-width:353px)and (max-width:767px){
+    .lang{
+        display: block;
+        margin-top:20px;
+    }
+    .loginLang{
+        margin-top:10px;
+    }
+    .lang a,.lang i{
+        color:white
+    }
+    #descktopMenu{
+        display:none;
+    }
+    .close{color:white;}
+    .mobileNav nav.navbar {
+        width: 100%;   
+        position: absolute; 
+        z-index: 999999;
+        top: 0;  
+        right: 0;
+        padding:0;
+}
+#navbarNav{
+    padding:20px;
+    background-color:#97004e;
+    width:100%;
+    padding-bottom:50px;
+}
+
+    .logo {
+        display: inline-block !important;
+    }
     .verticalSocial{
         display: none;
 }
@@ -1114,7 +1181,11 @@ padding:5;
       padding-bottom: 50px;
       }
     .box{
+        margin: 0 auto;
         margin-bottom: 20px;
+        width: 90%;
+        padding-right:25px;
+       
     }
 .videoCont{
     margin-top:160px;
@@ -1124,6 +1195,7 @@ padding:5;
     bottom: -43px;
     left: 23% ;
     width:100%;
+ 
 }
 .heroSlider .owl-nav{
     display: none;
@@ -1139,4 +1211,121 @@ padding:5;
 .playVideo{
     padding:15px;
 }
+.nav-link:before{
+    display:none;
+}
+.wow{
+    animation: none !important;
+}
+.dropdown-toggle::after {
+
+right:96px;}
+}
+@media(min-width:768px)and (max-width:1200px){
+    .nav-link:before{
+        display:none;
+    }
+
+    .dropdown-toggle::after {
+    
+    right:96px;}
+    
+    #descktopMenu{
+        display: none;
+    }
+    .mobileNav nav.navbar {
+        width: 100%;   
+        position: absolute; 
+        z-index: 999999;
+        top: 0;  
+        right: 0;
+        padding:0;
+}
+#navbarNav{
+    background-color:white;
+    width:50%;
+    float:none !important;
+    padding:15px;
+    position: absolute;
+}
+.lang{
+    display: block;
+    margin-top:20px;
+
+}
+.lang a,.lang i{
+    color:#97004E
+}
+#navbarNav .nav-link{
+    color:#97004e
+}
+#navbarNav .nav-link.active{
+    color:#f7941e;
+}
+.overlay{
+background-color:#000;
+opacity: .2;
+z-index: 222;
+width:100%;
+height:100%;
+left:0;
+top:0;
+right:0;
+position: absolute;
+display: none;
+}
+.mobileNav{
+    padding:10px;
+}
+
+.box{
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+section{
+    padding:50px 0 !important
+}
+
+.gallerySlider .owl-nav{
+    bottom:-15px;
+    left:45%;
+}
+.newsSection {
+    margin-top:10px;
+}
+.partnerSlider .owl-dots {
+    bottom: -34px;
+     left: auto; 
+    width: 100%;
+}
+.eventList h5{
+    margin-bottom:0;
+    font-size:22px;
+}
+.eventList{
+    padding:10px;
+}
+.eventList ul li a {
+    font-size: 18px;}
+    .eventList ul li{
+        padding:10px 0;
+    }
+    .EventImg{
+        height:auto
+    }
+    .form-group{
+        margin-bottom:0
+    }
+    .form-control{
+        height:55px;
+        width:100%;
+        margin-bottom:10px;
+    }
+    .vl{
+        display: none;
+    }
+    .footerSec{
+        margin-bottom:20px;
+    }
 }

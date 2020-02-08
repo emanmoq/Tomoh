@@ -63,6 +63,7 @@ jQuery(function ($) {
             $('.heroSlider').owlCarousel({
               autoplay:true,
               loop:true,
+              margin:10,
               nav:true,
               dots:true,
               rtl:true,
@@ -88,7 +89,12 @@ jQuery(function ($) {
                 margin:5,
               },
               1000:{
-                items:4
+                items:4,
+                margin:5,
+              },
+              1300:{
+                items:4,
+                
               }
               }
               });
@@ -119,6 +125,17 @@ jQuery(function ($) {
               nativeOnMobile: false
             });
             $(".close").click(function(){
-              $('.navbar-collapse').collapse("hide")})
+              $('.navbar-collapse').collapse("hide");
+              $(".overlay").css("display","none");
+            }  
+              );
+              $(".overlay").click(function(){
+               $('.navbar-collapse').collapse("hide");
+               $(".overlay").css("display","none");
+              });
+
+              $(".navbar-toggler").click(function(){
+                  $(".overlay").css("display","block");
+              })
 });
 
