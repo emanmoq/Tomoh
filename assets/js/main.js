@@ -63,7 +63,6 @@ jQuery(function ($) {
             $('.heroSlider').owlCarousel({
               autoplay:true,
               loop:true,
-              margin:30,
               nav:true,
               dots:true,
               rtl:true,
@@ -80,10 +79,13 @@ jQuery(function ($) {
                 rtl:true,
               responsive:{
               0:{
-                items:1
+                items:1,
+                margin:5,
+
               },
               600:{
-                items:2
+                items:2,
+                margin:5,
               },
               1000:{
                 items:4
