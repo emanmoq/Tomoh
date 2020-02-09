@@ -1,6 +1,7 @@
 jQuery(function ($) {
 
   new WOW().init();
+  $("area[rel^='prettyPhoto']").prettyPhoto();
     
         $(".nav-link").click(function(){
           $(".nav-link").removeClass("active");
@@ -41,21 +42,14 @@ jQuery(function ($) {
             });
             }
             $(document).on("scroll", onScroll);
-/*           $('.navbar-collapse ul li a').on('click', function () {
-  if($(this).attr('href')=="TestiMonials"){
-    $('html, body').animate({ scrollTop: $(this.hash).offset().top +50 }, 1000);
+        $('.navbar-collapse ul li a').on('click', function () {
+
+    $('html, body').animate({ scrollTop: $(this.hash).offset().top-100 }, 1000);
     $('.navbar-collapse.collapse.in').removeClass('in');
 
-  }
- 
-  else{
-    $('html, body').animate({ scrollTop: $(this.hash).offset().top-50 }, 1000);
-    $('.navbar-collapse.collapse.in').removeClass('in');
-
-  }
 
   return false;
-}); */
+}); 
            
             $('.up a').on('click', function () {
               $('html, body').animate({ scrollTop: $(this.hash).offset().top  }, 1000);
@@ -117,7 +111,7 @@ jQuery(function ($) {
               }
               }
               });
-            },3000)
+            },1000)
           
    
             $('select').selectric({
