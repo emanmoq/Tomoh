@@ -10,19 +10,18 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
     integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
-  <link rel="shortcut icon" href="assets/images/logo.png" sizes="16x16">
+  <link rel="shortcut icon" href="assets/images/logofav.png" sizes="50x50">
   <link rel="stylesheet" href="assets/css/owl.carousel.min.css" type="text/css">
   <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
   <link href="https://cdn.lineicons.com/1.0.1/LineIcons.min.css" rel="stylesheet">
   <link href="assets/css/animation.css" rel="stylesheet">
-  <link href="assets/css/lightbox.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
 
 <body>
   <div class="overlay">
-          
+
   </div>
   <div class="background">
     <img src="assets/images/sliderBG.jpg" alt="">
@@ -61,7 +60,7 @@
         <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
       </div>
       <nav class="navbar navbar-expand-lg clearfix d-md-block d-lg-none">
-       
+
         <div class="collapse navbar-collapse flex-row-reverse float-left" id="navbarNav">
 
           <button type="button" class="close float-left" data-dismiss="collapse" aria-label="Close">
@@ -83,16 +82,16 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">عائلتنا</a>
+              <a class="nav-link" href="ourFamily.html">عائلتنا</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#misce">خدماتنا</a>
+              <a class="nav-link" href="services.html">خدماتنا</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Events">الفعاليات</a>
+              <a class="nav-link" href="events.html">الفعاليات</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#news">الأخبار</a>
+              <a class="nav-link" href="news.html">الأخبار</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#gallery" id="media" role="button" data-toggle="dropdown"
@@ -145,37 +144,37 @@
                 <a class="nav-link active" href="index.html">الرئيسية </a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#hero" id="navbarDropdown" role="button" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">تطوع معنا
+                <a class="nav-link dropdown-toggle" href="#hero" id="navbarDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">تطوع معنا
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="#">التسحيل</a>
+                  <a class="dropdown-item" href="#"> الميثاق</a>
+                  <a class="dropdown-item" href="#">تعرف على متطوعنا</a>
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">عائلتنا</a>
+                <a class="nav-link" href="ourFamily.htmls">عائلتنا</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#misce">خدماتنا</a>
+                <a class="nav-link" href="services.html">خدماتنا</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Events">الفعاليات</a>
+                <a class="nav-link" href="events.html">الفعاليات</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#news">الأخبار</a>
+                <a class="nav-link" href="news.html">الأخبار</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#gallery" id="media" role="button" data-toggle="dropdown"
                   aria-haspopup="true" aria-expanded="false">المركز الاعلامي
                 </a>
                 <div class="dropdown-menu" aria-labelledby="media">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="#">الصور</a>
+                  <a class="dropdown-item" href="#"> الفيديوهات</a>
+                  <a class="dropdown-item" href="#"> النشرات </a>
+                  <a class="dropdown-item" href="#"> التقارير </a>
+
                 </div>
               </li>
               <li class="nav-item">
@@ -270,8 +269,10 @@
         </div>
         <div class="col-md-6">
           <div class="videoCont wow animate bounceIn" style="animation-delay:.2s; animation-duration: 1s;">
-            <img src="assets/images/video.png" data-lightbox="" alt="">
+            <video  id="videoplay" src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" >
+          </video>
             <a class="playVideo"><i class="lni-play"></i></a>
+
           </div>
         </div>
       </div>
@@ -486,14 +487,18 @@
     </div>
   </section>
   <section id="video">
-  
+
     <div class="container">
       <div class="row justify-content-center">
+        
         <div class=" col-lg-3 col-md-6 text-center">
           <div class="border-1 zoomIn wow" style="animation-delay:.2s; animation-duration: 1s;">
             <div class="border-2">
               <span class="showVideo">
-                <a href="https://www.youtube.com/watch?v=b2Vl9RAR5Xg"  class="html5lightbox"></a><i class="lni-play"></i></a></span>
+
+                <a href='youtube.com/watch?v=b2Vl9RAR5Xg' width="480"  class="html5lightbox" >
+                <i
+                  class="lni-play"></i></a></span>
             </div>
 
           </div>
@@ -510,26 +515,25 @@
         <div class="col-md-12">
           <div class="EventBox clearfix zoomIn" style="animation-delay:.2s; animation-duration: 1.1s;">
             <div class="eventList fadeInLeft" style="animation-delay:.2s; animation-duration: 1s;">
-              <h5 >جديد الفعاليات</h5>
+              <h5>جديد الفعاليات</h5>
               <ul>
-                <li class=" " >
+                <li class=" ">
                   <a href="#">بصمة خضراء </a>
                 </li>
-                <li class=" " >
+                <li class=" ">
                   <a href="#"> تصوير فوتوغرافي </a>
                 </li>
-                <li class=" " >
+                <li class=" ">
                   <a href="#">قلم حبر </a>
                 </li>
-                <li class=" " >
+                <li class=" ">
                   <a href="#">مطلوب مصور فوتوغرافي (للبنات) </a>
                 </li>
                 <li class=" ">
                   <a href="#"> مطلوب مصور فوتوغرافي (للرجال) </a>
                 </li>
               </ul>
-              <a href="#" class=" " s><i
-                  class="lni-plus"></i> المزيد</a>
+              <a href="#" class=" " s><i class="lni-plus"></i> المزيد</a>
             </div>
             <div class="EventImg float-right wow fadeInRight" style="animation-delay:.4s; animation-duration: 1s;">
               <img src="assets/images/event.png" alt="">
@@ -549,13 +553,12 @@
             <p class="" style="animation-delay:.4s; animation-duration: 1s;"> هذا النص هو مثال لنص يمكن أن
               يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
               أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.</p>
-            <h4 class="" >العنوان</h4>
-            <span class="" >
+            <h4 class="">العنوان</h4>
+            <span class="">
               خط مسيعيد، الوكرة, الدوحة , قطر
             </span>
             <h4 class=""> البريد الالكتروني</h4>
-            <span class="" ><a
-                href="#">info@tomoh.org</a></span>
+            <span class=""><a href="#">info@tomoh.org</a></span>
           </div>
         </div>
         <div class="col-md-6">
@@ -660,7 +663,7 @@
                 <a href="#"> من نحن</a>
               </li>
               <li>
-                <a href="#"> خدماتنا</a>
+                <a href="services.html"> خدماتنا</a>
               </li>
               <li>
                 <a href="#"> الأخبار</a>
@@ -758,7 +761,9 @@
       جميع الحقوق محفوظة لموقع طموح لإدارة العمل التطوعي 2020
     </div>
   </footer>
-  <script type="text/javascript" src="assets/js/jquery1.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.js"></script>
+ 
+ 
   <script src="assets/js/waypoints-min.js"></script>
   <script type="text/javascript" src="assets/js/countUp.js"></script>
   <script type="text/javascript" src="assets/js/jquery3.3.1.js"></script>
@@ -768,11 +773,32 @@
   <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/owl.carousel.js"></script>
   <script type="text/javascript" src="assets/js/wow.js"></script>
-  <script type="text/javascript" src="assets/js/jquery.selectric.min.js"></script>
-  <script type="text/javascript" src="assets/js/jquery.prettyPhoto.js"></script>
+
+
   <script type="text/javascript" src="assets/js/main.js"></script>
+  <script type="text/javascript" src="assets/js/froogaloop2.min.js"></script>
 
+  <script type="text/javascript" src="assets/js/html5lightbox.js"></script>
 
+<script>
+  var playButton =$(".playVideo");
+playButton.click( function() {
+  if ($("#videoplay").get(0).paused == true) {
+    // Play the video
+    $("#videoplay").get(0).play();
+
+    // Update the button text to 'Pause'
+    playButton.html('<i class="lni-pause"></i>');
+  } else {
+    // Pause the video
+    $("#videoplay").get(0).pause();
+
+    // Update the button text to 'Play'
+    playButton.html('<i class="lni-play"></i>');
+  }
+});
+
+</script>
 
 
 </body>

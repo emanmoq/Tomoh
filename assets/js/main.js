@@ -1,12 +1,7 @@
 jQuery(function ($) {
 
   new WOW().init();
-  $("area[rel^='prettyPhoto']").prettyPhoto();
     
-        $(".nav-link").click(function(){
-          $(".nav-link").removeClass("active");
-          $(this).addClass("active");
-        });
         $(window).scroll(function () {
           scrollTop = $(window).scrollTop();
         
@@ -42,14 +37,6 @@ jQuery(function ($) {
             });
             }
             $(document).on("scroll", onScroll);
-        $('.navbar-collapse ul li a').on('click', function () {
-
-    $('html, body').animate({ scrollTop: $(this.hash).offset().top-100 }, 1000);
-    $('.navbar-collapse.collapse.in').removeClass('in');
-
-
-  return false;
-}); 
            
             $('.up a').on('click', function () {
               $('html, body').animate({ scrollTop: $(this.hash).offset().top  }, 1000);
@@ -114,10 +101,7 @@ jQuery(function ($) {
             },1000)
           
    
-            $('select').selectric({
-              disableOnMobile: false,
-              nativeOnMobile: false
-            });
+     
             $(".close").click(function(){
               $('.navbar-collapse').collapse("hide");
               $(".overlay").css("display","none");
