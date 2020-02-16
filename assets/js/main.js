@@ -114,6 +114,11 @@ jQuery(function ($) {
 
               $(".navbar-toggler").click(function(){
                   $(".overlay").css("display","block");
-              })
+              });
+              $('select').selectric({
+                disableOnMobile: false,
+                nativeOnMobile: false,
+                dir:"ltr"
+              });
 });
 

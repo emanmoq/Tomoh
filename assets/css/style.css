@@ -942,12 +942,269 @@ margin-top:17px;}
     color:#3788E5;
 text-decoration: underline;
 }
-.memberShipForm .form-control{
-    width:100%;
+#reg{
+    padding:50px;
 }
+.memberShipForm .form-control{
+    height:auto
+}
+.memberShipForm{
+    border:1px solid #ebebeb;
+    padding:10px;
+}
+.formRegTitle{
+    color:#7C013F;
+    margin-bottom:30px;
+}
+.can-toggle input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .can-toggle input[type="checkbox"][disabled] ~ label {
+    pointer-events: none;
+  }
+  .can-toggle input[type="checkbox"][disabled] ~ label .can-toggle__switch {
+    opacity: 0.4;
+  }
+  .can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch:before {
+    content: attr(data-unchecked);
+    left: 0;
+  }
+  .can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
+    content: attr(data-checked);
+  }
+  .can-toggle label {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    position: relative;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .can-toggle label .can-toggle__switch {
+    position: relative;
+  }
+  .can-toggle label .can-toggle__switch:before {
+    content: attr(data-checked);
+    position: absolute;
+    top: 0;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .can-toggle label .can-toggle__switch:after {
+    content: attr(data-unchecked);
+    position: absolute;
+    z-index: 5;
+    text-transform: uppercase;
+    text-align: center;
+    background: white;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  .can-toggle input[type="checkbox"][disabled] ~ label {
+    color: rgba(119, 119, 119, 0.5);
+  }
+
+  .can-toggle input[type="checkbox"]:focus ~ label .can-toggle__switch:after, .can-toggle input[type="checkbox"]:hover ~ label .can-toggle__switch:after {
+    color: #5e5e5e;
+  }
+
+  .can-toggle input[type="checkbox"]:checked ~ label:hover {
+    color: #55bc49;
+  }
+  .can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch {
+    background-color: #70c767;
+  }
+  .can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
+    color: #4fb743;
+  }
+  .can-toggle input[type="checkbox"]:checked:focus ~ label .can-toggle__switch, .can-toggle input[type="checkbox"]:checked:hover ~ label .can-toggle__switch {
+    background-color: #5fc054;
+  }
+  .can-toggle input[type="checkbox"]:checked:focus ~ label .can-toggle__switch:after, .can-toggle input[type="checkbox"]:checked:hover ~ label .can-toggle__switch:after {
+    color: #47a43d;
+  }
+  .can-toggle label .can-toggle__label-text {
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .can-toggle label .can-toggle__switch {
+    -webkit-transition: background-color 0.3s cubic-bezier(0, 1, 0.5, 1);
+            transition: background-color 0.3s cubic-bezier(0, 1, 0.5, 1);
+    background: #848484;
+  }
+  .can-toggle label .can-toggle__switch:before {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .can-toggle label .can-toggle__switch:after {
+    -webkit-transition: -webkit-transform 0.3s cubic-bezier(0, 1, 0.5, 1);
+    transition: transform 0.3s cubic-bezier(0, 1, 0.5, 1);
+    color: #777;
+  }
+  .can-toggle input[type="checkbox"]:focus ~ label .can-toggle__switch:after, .can-toggle input[type="checkbox"]:hover ~ label .can-toggle__switch:after {
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+  }
+  .can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
+    -webkit-transform: translate3d(65px, 0, 0);
+            transform: translate3d(65px, 0, 0);
+  }
+  .can-toggle input[type="checkbox"]:checked:focus ~ label .can-toggle__switch:after, .can-toggle input[type="checkbox"]:checked:hover ~ label .can-toggle__switch:after {
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+  }
+  .can-toggle label {
+    font-size: 14px;
+  }
+  .can-toggle label .can-toggle__switch {
+    height: 36px;
+    -webkit-flex: 0 0 134px;
+        -ms-flex: 0 0 134px;
+            flex: 0 0 134px;
+    border-radius: 4px;
+  }
+  .can-toggle label .can-toggle__switch:before {
+    left: 67px;
+    font-size: 12px;
+    line-height: 36px;
+    width: 67px;
+    padding: 0 12px;
+  }
+  .can-toggle label .can-toggle__switch:after {
+    top: 2px;
+    left: 2px;
+    border-radius: 2px;
+    width: 65px;
+    line-height: 32px;
+    font-size: 12px;
+  }
+  .can-toggle label .can-toggle__switch:hover:after {
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+  }
+.can-toggle{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right:20px;
+}
+  .can-toggle.can-toggle--size-large label .can-toggle__switch:hover:after {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  }
+  .can-toggle.social input[type="checkbox"][disabled] ~ label {
+    color: rgba(181, 62, 116, 0.5);
+  }
+  .can-toggle.social input[type="checkbox"]:focus ~ label .can-toggle__switch, .can-toggle.social input[type="checkbox"]:hover ~ label .can-toggle__switch {
+    background-color: #b53e74;
+  }
+  .can-toggle.social input[type="checkbox"]:focus ~ label .can-toggle__switch:after, .can-toggle.social input[type="checkbox"]:hover ~ label .can-toggle__switch:after {
+    color: #8f315c;
+  }
+  .can-toggle.social input[type="checkbox"]:hover ~ label {
+    color: #a23768;
+  }
+  .can-toggle.social input[type="checkbox"]:checked ~ label:hover {
+    color: #39916a;
+  }
+  .can-toggle.social input[type="checkbox"]:checked ~ label .can-toggle__switch {
+    background-color: #44ae7f;
+  }
+  .can-toggle.social input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
+    color: #368a65;
+  }
+  .can-toggle.social input[type="checkbox"]:checked:focus ~ label .can-toggle__switch, .can-toggle.social input[type="checkbox"]:checked:hover ~ label .can-toggle__switch {
+    background-color: #3d9c72;
+  }
+  .can-toggle.social input[type="checkbox"]:checked:focus ~ label .can-toggle__switch:after, .can-toggle.social input[type="checkbox"]:checked:hover ~ label .can-toggle__switch:after {
+    color: #2f7757;
+  }
+  .can-toggle.social label .can-toggle__label-text {
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .can-toggle.social label .can-toggle__switch {
+    -webkit-transition: background-color 0.3s ease-in-out;
+            transition: background-color 0.3s ease-in-out;
+    background: #c14b81;
+  }
+  .can-toggle.social label .can-toggle__switch:before {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .can-toggle.social label .can-toggle__switch:after {
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    color: #b53e74;
+  }
+  /*********************/
+  .can-toggle.gender input[type="checkbox"][disabled] ~ label {
+    color: rgba(181, 62, 116, 0.5);
+  }
+  .can-toggle.social input[type="checkbox"]:focus ~ label .can-toggle__switch, .can-toggle.gender input[type="checkbox"]:hover ~ label .can-toggle__switch {
+    background-color: #b53e74;
+  }
+  .can-toggle.gender input[type="checkbox"]:focus ~ label .can-toggle__switch:after, .can-toggle.gender input[type="checkbox"]:hover ~ label .can-toggle__switch:after {
+    color: #8f315c;
+  }
+  .can-toggle.gender input[type="checkbox"]:hover ~ label {
+    color: #a23768;
+  }
+  .can-toggle.gender input[type="checkbox"]:checked ~ label:hover {
+    color: #39916a;
+  }
+  .can-toggle.gender input[type="checkbox"]:checked ~ label .can-toggle__switch {
+    background-color: #44ae7f;
+  }
+  .can-toggle.gender input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
+    color: #368a65;
+  }
+  .can-toggle.gender input[type="checkbox"]:checked:focus ~ label .can-toggle__switch, .can-toggle.gender input[type="checkbox"]:checked:hover ~ label .can-toggle__switch {
+    background-color: #3d9c72;
+  }
+  .can-toggle.gender input[type="checkbox"]:checked:focus ~ label .can-toggle__switch:after, .can-toggle.gender input[type="checkbox"]:checked:hover ~ label .can-toggle__switch:after {
+    color: #2f7757;
+  }
+  .can-toggle.gender label .can-toggle__label-text {
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .can-toggle.gender label .can-toggle__switch {
+    -webkit-transition: background-color 0.3s ease-in-out;
+            transition: background-color 0.3s ease-in-out;
+    background: #c14b81;
+  }
+  .can-toggle.gender label .can-toggle__switch:before {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .can-toggle.gender label .can-toggle__switch:after {
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    color: #b53e74;
+  }
 .form-group{
     margin-bottom: 30px;
+    width:50%;
+    display: inline-block;
+    float: right;
 }
+.selectric-wrapper{
+    width:70%;
+    text-align: right;
+}
+.selectric-items li:hover {
+    background-color: #7C013F;
+}
+.selectric-items li.selected {
+    color: #666;
+}
+.selectric-items li.selected:hover {
+color:white;}
 .form-control{
     display: inline-block;
     width:48%;
@@ -1578,10 +1835,18 @@ padding:50px 0;
     height:120px;
     margin-bottom:70px;
 }
+.video .partnerItem{
+    height:120px;
+}
 .fancybox-wrap.fancybox-desktop.fancybox-type-iframe.fancybox-opened{
 
     top:10% !important;
 }
+.memberShipForm label{
+    color:#7C013F;
+    font-size:16px
+}
+
 @media(min-width:353px)and (max-width:767px){
     .lang{
         display: block;
