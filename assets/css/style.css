@@ -453,6 +453,9 @@ padding-top:13px;
     padding-bottom:135px;
     position: relative;
 }
+.news{
+    padding:4%;
+}
 .newsSection{
     margin-top:80px;
     padding:10px;
@@ -463,7 +466,7 @@ padding-top:13px;
     box-shadow: 2px 2px 5px 0 rgba(47, 46, 52, 0.12);
     animation: all .5s;
 }
-.newsSection:hover .newsTitle{
+.newsSection:hover .newsTitle a{
   color:#f7941e;
   transition: all .5s;
 }
@@ -474,12 +477,25 @@ padding-top:13px;
     border-radius: 3px;
     overflow: hidden;
 }
-.newsTitle{
+.newsTitle {
     display:inline-block;
     font-size:20px;
     color:#98014E;
     font-family: a-jannat-lt-bold;
     margin-top:12px;
+}
+.projBox p{
+    font-size:1em;
+    color:#9b9b9b;
+    padding:5px;
+}
+.projBox{
+    background-color:white;
+    width:100%;
+    box-shadow: 0 0 10px 2px rgba(0,0,0,.1)
+}
+.newsTitle a{
+    color:#98014E;
 }
 .newsLetters{
     position: absolute;
@@ -926,6 +942,9 @@ margin-top:17px;}
     color:#3788E5;
 text-decoration: underline;
 }
+.memberShipForm .form-control{
+    width:100%;
+}
 .form-group{
     margin-bottom: 30px;
 }
@@ -1106,6 +1125,9 @@ color:white;
     #innerBody{
         padding:200px 0;
     }
+#innerBody.contactBody{
+    padding:0;
+}
     #innerPage .container{
         position: relative;
     }
@@ -1136,7 +1158,430 @@ color:white;
             .backtoHome:hover i{
                 color: white !important;
                  }  
+                 .RegBox{
+                    width: 100%;
+                    background-color: #fff;
+                    text-align: center;
 
+                    box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.05);
+                  padding: 20px;
+
+                    
+                    }
+    
+                    .RegBox .form-group{
+                        position: relative;
+                        margin: 0px 0px 20px 0px;
+                    }
+                    .RegBox .form-control{
+                        padding: 6px 20px 6px 40px;
+                        font-size: 15px;
+                        color: #66727f;
+                        background-color: #f9f9f9;
+                        box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.05);
+                        height: 50px;
+                        border-radius: 3px;
+                        border: 2px solid #d6d9dd;
+                        width:100%;
+                    }
+                    .RegBox .form-group i{
+                        position: absolute;
+                        width: 16px;
+                        height: 18px;
+                        left: 18px;
+                        top: 16px;
+                        background-repeat: no-repeat;
+                        background-position: bottom;
+                        color: #a8b6c3;
+                    }
+                    #loginPaeg{
+                        padding:20px;
+                    }
+                    .RegisterModalFooter{
+                        padding: 18px 20px;
+                        text-align: right;
+                        border-top: 1px solid#a8b6c3;
+                        margin-top: 43px;
+
+                    }
+                    .RegisterModalFooter span {
+                        color: #7c013f;
+                    }
+                    .RegisterModalFooter a {
+                        color: #72c8fa;
+                        display: inline-block;
+                        margin-right: 10px;
+                    }
+                    .signbtn{
+                            background-color: #7c013f;
+                            width: 100%;
+                            font-size: 16px;
+                            color: #fff;
+                            border: none;
+                            padding: 12px 20px;
+                            border-radius: 3px;
+                            text-align: center;
+                            height: 48px;
+                            text-transform: uppercase;
+                    
+                    }
+                    .RememberSec{
+                        cursor: pointer;
+                        margin-bottom: 10px;
+                        width:100%;
+                        text-align: right;
+                    }
+                    .RememberSec span{
+                        font-size: 12px;
+                        color: #7c013f;
+                        line-height: 1.5;
+                    }
+                    .RememberSec .checkInput{
+                        border: 0;
+                        height: 1px;
+                        margin: -1px;
+                        padding: 0;
+                        position: absolute;
+                        width: 1px;}
+
+                        .RememberSec .customcheckbox{
+                            height: 20px;
+                            width: 20px;
+                            background-color: #fff;
+                            border: 2px solid #7c013f;
+                            border-radius: 3px;
+                            margin-left: 10px;
+                        }
+                        
+                        .customcheckbox:after{
+                            content:"";
+                            position: absolute;
+                            right: 7px;
+                            top: 4;
+                            width: 5px;
+                            height: 10px;
+                            border: solid #7c013f;
+                            border-width: 0 2px 2px 0;
+                            transform: rotate(45deg);
+                            display: none;
+                        
+                        }
+                        .checkInput:checked  ~ .customcheckbox{
+                            border:2px solid #7c013f;
+                        }
+                        
+                        .checkInput:checked  ~ .customcheckbox:after {
+                              display: block;
+                            
+                        }
+                        #innerPage h1.loginTitle{
+                            font-size: 50px;
+                        }
+    #Charter{
+        padding:40px 0;
+    }
+    #Charter p{
+        font-size:20px;
+        color:#9b9b9b;
+        font-family: a;
+        font-family: a-jannat-lt-bold;
+
+    }
+    #Charter ul{
+        margin-top:40px;
+    }
+    #Charter li {
+        font-size:18px;
+        color:#9b9b9b;
+        margin-right:10px;
+        margin-top:20px;
+
+    }
+    .charterBox{
+        box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.05) ;
+        padding:40px;
+    }
+    .charterList li{
+        list-style: decimal;
+    }
+.partnertsPage .partnerItem,.volunteerPage .partnerItem{
+margin-top:50px;
+height: 120px;
+}
+.volunteerName{
+    font-size:18px;
+    color:#A30F5C;
+    margin-top:20px;
+    text-align: center;
+}
+.volunteerPage .partnerItem{
+    margin-top:70px;
+}
+
+.volunteerPage .partnerItem img{
+    transition: all .5s;
+}
+.volunteerPage .partnerItem:hover img{
+transform: scale(1.1);
+transition: all .5s;
+}
+.volunteerPage .partnerItem:hover .volunteerName{
+color:#f7941e
+}
+#volunteer{
+    padding:80px 0;
+}
+.volunteerImg {
+    width:50%;
+    margin:10px auto;
+}
+.card-body{
+    border: 1px solid rgba(0,0,0,.125);
+    text-align: center;
+}
+.card-body .volunteerName{
+    margin-top:0;
+    display: inline-block;
+    margin-right:20px;
+}
+.card-body label{
+    font-size:18px;
+    color:#a8b6c3;
+}
+.nameV{
+    display: inline-block;
+    margin-right:50px;
+    text-align: center;
+}
+.socialCard{
+    margin-top:20px;
+}
+.socialCard li{
+    margin-left:20px;
+    display: inline-block;
+   
+}
+
+.socialCard li a{
+    color:white;
+    font-size:18px;
+    width: 100%;;
+}
+.socialCard li a i{
+ padding:15px;
+ transition: all .5s;
+
+}
+.socialCard li:hover  i{
+    transform: scale(1.4);
+}
+
+.socialCard li a i.fa-facebook-f{
+    background-color:#3b5998;
+}
+.socialCard li a i.fa-twitter{
+    background-color:#00acee;
+}
+
+.socialCard li a i.fa-youtube{
+    background-color: #c4302b;
+}
+.socialCard li a i.fa-facebook-f:hover{
+color:#3b5998;
+    background-color: transparent;
+    transition: all .5s;
+
+}
+.socialCard li a i.fa-twitter:hover{
+    color:#00acee;
+    background-color: transparent;
+    transition: all .5s;
+}
+
+.socialCard li a i.fa-youtube:hover{
+    color:#c4302b;
+    background-color: transparent;
+    transition: all .5s;
+
+}
+#servicesBody{
+    padding:50px 0;
+}
+.servicesBox{
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.05) ;
+    padding:30px;
+}
+.servicesBox ul{
+    margin-top:20px;
+}
+.serviceList li{
+list-style: decimal;
+margin-top:20px;
+color:#8d8d8d;
+font-size: 16px;
+}
+.serviceList li ul{
+    margin-right:20px;
+}
+.serviceList li ul li{
+    color:black;
+}
+.serviceList li ul p{
+    color:black;
+}
+.serviceList li p{
+    margin-right:10px;
+    font-size: 16px;
+    }
+    .serviceBtn{
+background-color:#7C013F;
+color:white;
+float:left;
+margin-top:50px;
+padding:10px 20px;
+color:white;
+font-size:16px;
+border:1px solid #7C013F;
+transition: all .5s;;
+    }
+    .serviceBtn:hover{
+
+     color:#7C013F;
+     background-color:white;
+
+border:1px solid #7C013F;
+transition: all .5s;;
+    }
+    .EventImg {
+        width: 100%;
+        height: 100%;
+    }
+    .EventImg figure {
+        position: relative;
+        z-index: 2;
+        height:100%;
+
+    }
+    .EventImg figure {
+        position: relative;
+        z-index: 2;
+        height:100%;  
+    }
+    .EventImg figure:before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        background: #7c013f;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+    .EventImg figure figcaption {
+        top: auto;
+        bottom: 15px;
+        opacity: 0;
+        color: white;
+    position: absolute;
+    z-index: 111;
+    right: 20%;
+    }
+
+    .EventCountDown li {
+        display: inline-block;
+        color: white;
+    }
+    .EventCountDown li span {
+        display: inline-block;
+        color: white;
+        margin: 10px;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .EventCountDown li p {
+        font-size: 12px;
+    }
+    .EventListDesc{
+        padding: 30px 0px 30px 0;
+    }
+    
+    .EventListDesc h4 {
+        margin-bottom: 10px;
+    }
+    .EventListDesc h4 a {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #7c013f;
+    }
+    .EventListDesc p{
+        color: #777777;
+        font-size: 16px;
+    }
+    .tail li {
+        display: inline-block;
+    }
+    .tail li i {
+        color: #7c013f;
+        margin-right: 10px;
+    }
+    .tail li a {
+        font-size: 15px;
+        color: #999999;
+        text-transform: capitalize;
+    }
+    .EventCont {
+        width: 100%;
+        margin-bottom: 30px;
+        background-color: #f9f9f9;
+        
+    }
+    .EventCont:hover{
+            box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);  
+    }
+    .EventCont:hover .EventImg figure:before
+    {
+     opacity: .6;
+}
+.EventCont:hover .EventImg figure figcaption{
+opacity: 1;
+
+}
+.EventListDetails 
+{
+    display: inline-block;
+    margin-right:10px;
+}
+.EventListDetails.mzero{
+    margin-right:0;
+}
+
+.EventListDetails  li{
+    display: block;
+}
+.EventListDetails label{
+    color:#7c013f;
+    margin-left:10px;
+}
+.EventListDetails span{
+    color:#777777
+}
+#EventsBody{
+padding:50px 0;
+}
+.page-link{
+    color:#7c013f
+}
+.page-link:hover{
+    color:#97004E
+}
+.gallery .partnerItem {
+    height:120px;
+    margin-bottom:70px;
+}
+.fancybox-wrap.fancybox-desktop.fancybox-type-iframe.fancybox-opened{
+
+    top:10% !important;
+}
 @media(min-width:353px)and (max-width:767px){
     .lang{
         display: block;
