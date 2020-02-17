@@ -752,20 +752,38 @@
                 <div class="form-group selectsec">
                   <label><br>
                     أسباب التطوع ؟</label>
-                    <select data-placeholder="اختر السبب  ..." name="reason[]" class="chosen-select" tabindex="2"
-                      multiple>
-                      <option value='1'>خدمة مجتمع</option>
-                      <option value='2'>جمع ساعات تطوع</option>
-                      <option value='3'>حوافز ماديه</option>
+                  <select data-placeholder="اختر السبب  ..." name="reason[]" class="chosen-select" tabindex="2"
+                    multiple>
+                    <option value='1'>خدمة مجتمع</option>
+                    <option value='2'>جمع ساعات تطوع</option>
+                    <option value='3'>حوافز ماديه</option>
 
-                    </select>
+                  </select>
                 </div>
-            <div class="footer float-left">
-              <button type="cancel" class="regSendBtn btn">
-                إفراغ الحقول</button>
+                <div class="form-group" style="width:100%">
+                  <label><br>
+                    التحقق</label>
+                  <div class="g-recaptcha" data-sitekey="6LemGioUAAAAACoCkHDN1SFTThA5Wwgua_t8l5VQ">
+                    <div style="width: 304px; height: 78px;">
+                      <div><iframe
+                          src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LemGioUAAAAACoCkHDN1SFTThA5Wwgua_t8l5VQ&amp;co=aHR0cHM6Ly90b21vaC5vcmc6NDQz&amp;hl=en&amp;v=JZfekeK8w6ZlhLfH_ZyseSLX&amp;size=normal&amp;cb=egrn2dc7k8c2"
+                          width="304" height="78" role="presentation" name="a-64g0maddjzyu" frameborder="0"
+                          scrolling="no"
+                          sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+                      </div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"
+                        style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="footerreg float-left">
+                <button type="cancel" class="regSendBtn btn">
+                  إفراغ الحقول</button>
                 <button type="submit" class="saveBtn btn">
-                   حفظ البيانات</button>
-            </div>
+                  حفظ البيانات</button>
+              </div>
             </form>
           </div>
         </div>
@@ -932,6 +950,7 @@
   <script type="text/javascript" src="assets/js/jquery.selectric.min.js"></script>
   <script type="text/javascript" src="assets/js/jquery.prettyPhoto.js"></script>
   <script type="text/javascript" src="assets/js/bundle.min.js"></script>
+  <script type="text/javascript" src="assets/js/recaptcha__en.js"></script>
 
   <script type="text/javascript" src="assets/js/main.js"></script>
   <script type="text/javascript" src="assets/js/jquery1.js"></script>

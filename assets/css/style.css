@@ -1942,6 +1942,9 @@ input[type=number] {
     background-color:#9bc652;
     width:120px;
 }
+.footerreg .btn:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 2px 3px 20px 3px;
+}
 @media(min-width:353px)and (max-width:767px){
     .lang{
         display: block;
