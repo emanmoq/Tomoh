@@ -727,7 +727,6 @@
                 <div class="form-group selectsec">
                   <label class="selectLabel">
                     المجالات التي ترغب في التطوع بها<br>
-                    المجال المفضل الاول
                   </label>
                   <select class="chosen-select" name="field[]" tabindex="4" multiple>
                     <option value='1'>الاعلام (التحرير-التدقيق اللغوي)</option>
@@ -751,7 +750,8 @@
                   <span class="passwordHint">يمكنك اختيار أكثر من مجال</span>
                 </div>
                 <div class="form-group selectsec">
-                  <label>أسباب التطوع ؟</label>
+                  <label><br>
+                    أسباب التطوع ؟</label>
                     <select data-placeholder="اختر السبب  ..." name="reason[]" class="chosen-select" tabindex="2"
                       multiple>
                       <option value='1'>خدمة مجتمع</option>
@@ -760,8 +760,12 @@
 
                     </select>
                 </div>
-                <button type="submit" class="regSendBtn btn">
-                  أرسل</button>
+            <div class="footer float-left">
+              <button type="cancel" class="regSendBtn btn">
+                إفراغ الحقول</button>
+                <button type="submit" class="saveBtn btn">
+                   حفظ البيانات</button>
+            </div>
             </form>
           </div>
         </div>

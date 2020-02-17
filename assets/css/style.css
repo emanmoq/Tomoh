@@ -1932,9 +1932,16 @@ input[type=number] {
 }
 .regSendBtn{
     background-color: #7C013F;
-    width:80px;
+    width:120px;
     color:white;
-float:left;}
+}
+.regSendBtn:hover{
+    color:white;
+}
+.saveBtn{
+    background-color:#9bc652;
+    width:120px;
+}
 @media(min-width:353px)and (max-width:767px){
     .lang{
         display: block;
