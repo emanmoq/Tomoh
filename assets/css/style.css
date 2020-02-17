@@ -6,6 +6,7 @@
     font-family: a-jannat-lt;
     src:url("../fonts/a-jannat-lt.ttf")
 }
+
 ul{
     list-style: none;
     margin:0;
@@ -946,7 +947,8 @@ text-decoration: underline;
     padding:50px;
 }
 .memberShipForm .form-control{
-    height:auto
+    height:auto;
+    width:60%;
 }
 .memberShipForm{
     border:1px solid #ebebeb;
@@ -1439,7 +1441,7 @@ color:white;
                         height: 50px;
                         border-radius: 3px;
                         border: 2px solid #d6d9dd;
-                        width:100%;
+                        width:65%;
                     }
                     .RegBox .form-group i{
                         position: absolute;
@@ -1844,9 +1846,95 @@ padding:50px 0;
 }
 .memberShipForm label{
     color:#7C013F;
-    font-size:16px
+    font-size:16px;
+}
+.memberShipForm .form-group label.custom-file-label{
+    width:100%;
+}
+.custom-file-label::after{
+    content:"\f108";
+    right: auto;
+    left:0;
+    font-family:"Font Awesome 5 Brands";
+}
+.custom-file {
+    position: relative;
+    display: inline-block;
+    width: 60%;
+}
+.selectric .label{
+    text-align: right;
+}
+    .selectric .button {
+        right: auto;
+        left: 0;
+        width: auto;
+        background-color: #eee;}
+        .selectric-wrapper {
+            width: 60%;
+            float: none;
+            display: inline-block;
+            vertical-align: middle;
+            min-height: 44px;
+        }
+.personalInfo  .form-group label{
+    width:35%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
+/* Firefox */
+input[type=number] {
+  -moz-appearance:textfield;
+}
+.loginInfo{
+    position: relative;
+}
+.loginInfo .form-control{
+    margin-bottom:30px;
+}
+.loginInfo .form-control::placeholder{
+    font-size:14px;
+}
+.loginInfo .form-control.passwordInput{
+    margin-bottom:0;
+}
+.loginInfo span {
+    font-siZe: 11px;
+    color: #b4b4b4;
+    margin: 0;
+    position: absolute;
+    right: 41%;
+    top: 23%;
+}
+.passwordHint{
+  color:  #b4b4b4;
+}
+    .loginInfo span.passwordHint {
+        top:auto;
+        bottom: -10%;
+        
+    }
+.contactInfo{
+    padding-top:20px;
+    border-top:1px solid #eee;
+    margin-top:20px;
+}
+.selectsec{
+    position: relative;
+}
+.chzn-container{
+    width:60% !important;
+    vertical-align: middle;
+}
+.regSendBtn{
+    background-color: #7C013F;
+    width:80px;
+    color:white;
+float:left;}
 @media(min-width:353px)and (max-width:767px){
     .lang{
         display: block;

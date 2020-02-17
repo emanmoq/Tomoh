@@ -16,6 +16,7 @@
   <link href="https://cdn.lineicons.com/1.0.1/LineIcons.min.css" rel="stylesheet">
   <link href="assets/css/animation.css" rel="stylesheet">
   <link href="assets/css/selectric.css" rel="stylesheet">
+  <link href="assets/css/chosen.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
@@ -192,7 +193,7 @@
       <div class="row justify-content-center">
         <div class="col-md-10">
           <h4 class="memberShipFormTitle">تسجيل عضوية</h4>
-          <div class="memberShipForm">
+          <div class="memberShipForm clearfix">
             <form>
               <div class="personalInfo clearfix">
                 <h4 class="formRegTitle">البيانات الشخصية</h4>
@@ -231,10 +232,10 @@
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="nationality">
+                  <label for="nationality" class="selectLabel">
                     الجنسية
                   </label>
-                  <select>
+                  <select class="select">
                     <option value='2'>آيسلند</option>
                     <option value='3'>أذربيجان</option>
                     <option value='4'>أرميني</option>
@@ -431,10 +432,10 @@
                   </select>
                 </div>
                 <div class="form-group">
-                  <label for="nationality">
+                  <label for="nationality" class="selectLabel">
                     المنطقة
                   </label>
-                  <select>
+                  <select class="select">
                     <option value='2'>آيسلند</option>
                     <option value='3'>أذربيجان</option>
                     <option value='4'>أرميني</option>
@@ -631,16 +632,136 @@
                   </select>
                 </div>
                 <div class="form-group">
-                  <label for="file">
-                    الصورة
-                  </label>
-                  <input type="file" class="form-conrol">
-              
+                  <label for="file">تحميل صورة</label>
+                  <div class="custom-file" style="display: inline-block;">
+
+                    <input type="file" class="custom-file-input" id="file">
+                    <label class="custom-file-label" for="inputGroupFile01" style="display: inline-block;"></label>
+                  </div>
+
                 </div>
               </div>
+              <div class="personalInfo contactInfo clearfix">
+                <h4 class="formRegTitle"> معلومات الاتصال</h4>
+                <div class="form-group">
+                  <label for="name"> رقم الجوال </label>
+                  <input type="number" class="form-control" placeholder="">
+                </div>
+                <div class="form-group">
+                  <label> البريد الالكتروني </label>
+                  <input type="mail" class="form-control" placeholder="">
+                </div>
+                <div class="form-group loginInfo">
+                  <label> بيانات الدخول</label>
+                  <input type="text" class="form-control" placeholder="اسم المستخدم">
+                  <span>اسم المستخدم يجب ان يكون من 3-20 حرفا</span>
+                  <label> </label>
+                  <input type="passsword" class="form-control" placeholder="كلمة المرور">
+                  <label> </label>
+                  <input type="passsword" class="form-control passwordInput" placeholder="تأكيد كلمة المرور">
+                  <span class="passwordHint"> ينبغي أن تكون كلمة السر على الأقل 6 أحرف.
+                  </span>
 
-              <button type="submit" class="send ">
-                أرسل</button>
+                </div>
+                <div class="form-group">
+                  <label> الوظيفة</label>
+                  <input type="text" value="" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label> أتاحة البروفايل للجميع </label>
+                  <div class="can-toggle social">
+                    <input id="profile" type="checkbox">
+                    <label for="profile">
+                      <div class="can-toggle__switch" data-checked="تشغيل" data-unchecked="إيقاف"></div>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="nationality" class="selectLabel">
+                    المؤهل العلمي
+                  </label>
+                  <select class="select">
+                    <option value="">"اختر المؤهل ..." </option>
+                    <option value='1'>ابتدائيه</option>
+                    <option value='2'>اعداديه</option>
+                    <option value='3'>ثانويه</option>
+                    <option value='4'>جامعه</option>
+                    <option value='5'>دبلوم</option>
+                    <option value='6'>ماجستير</option>
+                    <option value='7'>دكتوراه</option>
+                    <option value='8'>بروفسير</option>
+
+                  </select>
+                </div>
+              </div>
+              <div class="personalInfo contactInfo clearfix">
+                <h4 class="formRegTitle"> معلومات في الاهتمام والتواصل</h4>
+                <div class="form-group">
+                  <label for="name"> الاوقات المفضلة للتطوع </label>
+                  <select tabindex="2" class="chosen-select" name="field[]" tabindex="4" multiple>
+                    <option value="">"اختر الفترة ..." </option>
+                    <option value='1'>الفترة الصباحية</option>
+                    <option value='2'>الفترة المسائية</option>
+                  </select>
+
+                </div>
+                <div class="form-group">
+                  <label> البريد الالكتروني </label>
+                  <input type="mail" class="form-control" placeholder="">
+                </div>
+                <div class="form-group">
+                  <label> الوظيفة</label>
+                  <input type="text" value="" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label> أتاحة البروفايل للجميع </label>
+                  <div class="can-toggle social">
+                    <input id="profile" type="checkbox">
+                    <label for="profile">
+                      <div class="can-toggle__switch" data-checked="تشغيل" data-unchecked="إيقاف"></div>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form-group selectsec">
+                  <label class="selectLabel">
+                    المجالات التي ترغب في التطوع بها<br>
+                    المجال المفضل الاول
+                  </label>
+                  <select class="chosen-select" name="field[]" tabindex="4" multiple>
+                    <option value='1'>الاعلام (التحرير-التدقيق اللغوي)</option>
+                    <option value='2'>الاعلام (التصميم الفني والجرافيك)</option>
+                    <option value='3'>الاعلام التصوير الفوتوغرافي</option>
+                    <option value='4'>البرمجه والكمبيوتر</option>
+                    <option value='5'>الضيافه والاستقبال والبروتوكول</option>
+                    <option value='6'>التفاعل مع الجماهير</option>
+                    <option value='7'>المحاسبه والحسابات</option>
+                    <option value='8'>الفنون والتصميم</option>
+                    <option value='9'>الامور التقنيه</option>
+                    <option value='10'>التسويق والعلاقات العامه</option>
+                    <option value='11'>التنظيم</option>
+                    <option value='12'>التمويل /الرعايه /جمع التبرعات /تنمية الموارد الماليه</option>
+                    <option value='13'>التخطيط المالي والميزانيه/المحاسبه/مراجعة الحسابات</option>
+                    <option value='14'>التدريب</option>
+                    <option value='15'>البحوث</option>
+                    <option value='16'>اعمال السيكرتاريه</option>
+                    <option value='17'>تعليم اللغة العربية</option>
+                  </select>
+                  <span class="passwordHint">يمكنك اختيار أكثر من مجال</span>
+                </div>
+                <div class="form-group selectsec">
+                  <label>أسباب التطوع ؟</label>
+                    <select data-placeholder="اختر السبب  ..." name="reason[]" class="chosen-select" tabindex="2"
+                      multiple>
+                      <option value='1'>خدمة مجتمع</option>
+                      <option value='2'>جمع ساعات تطوع</option>
+                      <option value='3'>حوافز ماديه</option>
+
+                    </select>
+                </div>
+                <button type="submit" class="regSendBtn btn">
+                  أرسل</button>
             </form>
           </div>
         </div>
@@ -806,14 +927,14 @@
   <script type="text/javascript" src="assets/js/wow.js"></script>
   <script type="text/javascript" src="assets/js/jquery.selectric.min.js"></script>
   <script type="text/javascript" src="assets/js/jquery.prettyPhoto.js"></script>
-  <script type="text/javascript" src="assets/js/fileUpload.js"></script>
+  <script type="text/javascript" src="assets/js/bundle.min.js"></script>
+
   <script type="text/javascript" src="assets/js/main.js"></script>
   <script type="text/javascript" src="assets/js/jquery1.js"></script>
+  <script type="text/javascript" src="assets/js/chosen.js"></script>
   <script src="assets/js/waypoints-min.js"></script>
   <script type="text/javascript" src="assets/js/countUp.js"></script>
-
   <!--
-  <script type="text/javascript" src="assets/js/jquery.ui.min.js"></script>
   <script type="text/javascript" src="assets/js/chosen.js"></script>
   <script type="text/javascript" src="assets/js/customInput.jquery.js"></script>
   <script type="text/javascript" src="assets/js/fullcalendar.js"></script>
@@ -822,9 +943,18 @@
   <script type="text/javascript" src="assets/js/iphoneCheck.js"></script>
   <script type="text/javascript" src="assets/js/zice.custom.js"></script>
   -->
-
-
-
+  <script>
+    jQuery.browser = {};
+    (function () {
+      jQuery.browser.msie = false;
+      jQuery.browser.version = 0;
+      if (navigator.userAgent.match(/MSIE ([0-9]+)\./)) {
+        jQuery.browser.msie = true;
+        jQuery.browser.version = RegExp.$1;
+      }
+    })();
+    $("select.chosen-select").chosen({ rtl: true }); 
+  </script>
 
 </body>
 
