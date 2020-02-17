@@ -2118,6 +2118,35 @@ padding:5;
 .dropdown-toggle::after {
 
 right:96px;}
+.memberShipForm .form-group ,.memberShipForm .form-group label,
+.memberShipForm .form-group .form-control,.selectric-wrapper,.chzn-container,.custom-file{
+    width:100% !important;
+}
+.loginInfo span {
+
+    right: 0;
+    top: 34%;
+}
+.loginInfo .form-control.passwordInput{
+    margin-bottom: 30px;
+
+}
+.footerreg  .btn{
+    margin-top:20px;
+}
+.footerreg {
+    float: none;
+}
+.saveBtn,.regSendBtn {
+    width:90px;
+    font-size:12px;
+}
+.g-recaptcha div{
+    width:100% !important;
+}
+.loginInfo span.passwordHint{
+    bottom:2%;
+}
 }
 @media(min-width:768px)and (max-width:1200px){
     .nav-link:before{
