@@ -951,7 +951,13 @@
   <script type="text/javascript" src="assets/js/jquery.prettyPhoto.js"></script>
   <script type="text/javascript" src="assets/js/bundle.min.js"></script>
   <script type="text/javascript" src="assets/js/recaptcha__en.js"></script>
-
+<script>
+  $('.select').selectric({
+    disableOnMobile: false,
+    nativeOnMobile: false,
+    dir:"ltr"
+  });
+</script>
   <script type="text/javascript" src="assets/js/main.js"></script>
   <script type="text/javascript" src="assets/js/jquery1.js"></script>
   <script type="text/javascript" src="assets/js/chosen.js"></script>
@@ -977,6 +983,7 @@
       }
     })();
     $("select.chosen-select").chosen({ rtl: true }); 
+
   </script>
 
 </body>
