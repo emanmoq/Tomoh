@@ -1946,6 +1946,9 @@ input[type=number] {
     box-shadow: rgba(0, 0, 0, 0.1) 2px 3px 20px 3px;
 }
 @media(min-width:353px)and (max-width:767px){
+    #reg{
+        padding:10px;
+    }
     .lang{
         display: block;
         margin-top:20px;
@@ -2149,6 +2152,35 @@ right:96px;}
 }
 }
 @media(min-width:768px)and (max-width:1200px){
+    .memberShipForm .form-group ,.memberShipForm .form-group label,
+.memberShipForm .form-group .form-control,.selectric-wrapper,.chzn-container,.custom-file{
+    width:100% !important;
+}
+.loginInfo span {
+
+    right: 0;
+    top: 34%;
+}
+.loginInfo .form-control.passwordInput{
+    margin-bottom: 30px;
+
+}
+.footerreg  .btn{
+    margin-top:20px;
+}
+.footerreg {
+    float: none;
+}
+.saveBtn,.regSendBtn {
+    width:90px;
+    font-size:12px;
+}
+.g-recaptcha div{
+    width:100% !important;
+}
+.loginInfo span.passwordHint{
+    bottom:2%;
+}
     .nav-link:before{
         display:none;
     }
