@@ -1433,6 +1433,8 @@ color:white;
                     .RegBox .form-group{
                         position: relative;
                         margin: 0px 0px 20px 0px;
+                        width:100%;
+                        float: none;
                     }
                     .RegBox .form-control{
                         padding: 6px 20px 6px 40px;
@@ -1443,7 +1445,7 @@ color:white;
                         height: 50px;
                         border-radius: 3px;
                         border: 2px solid #d6d9dd;
-                        width:65%;
+                        width:100%;
                     }
                     .RegBox .form-group i{
                         position: absolute;
@@ -1713,8 +1715,8 @@ transition: all .5s;;
 border:1px solid #7C013F;
 transition: all .5s;;
     }
-    .EventImg {
-        width: 50%;
+    .EventCont .EventImg {
+        width: 100%;
         height: 100%;
     }
     .EventImg figure {
