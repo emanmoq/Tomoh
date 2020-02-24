@@ -1207,6 +1207,9 @@ text-decoration: underline;
 }
 .selectric-items li.selected:hover {
 color:white;}
+.contactForm .form-group{
+    width:100%;
+}
 .form-control{
     display: inline-block;
     width:48%;
@@ -1275,7 +1278,6 @@ button.navbar-toggler {
     opacity: .7;
     border:1px solid #f7941e;
     text-align: center;
-
 }
 .mobileMenu i {
     animation: nav2 0.8s backwards;
@@ -1712,7 +1714,7 @@ border:1px solid #7C013F;
 transition: all .5s;;
     }
     .EventImg {
-        width: 100%;
+        width: 50%;
         height: 100%;
     }
     .EventImg figure {
@@ -2121,7 +2123,9 @@ padding:5;
 .dropdown-toggle::after {
 
 right:96px;}
-.memberShipForm .form-group ,.memberShipForm .form-group label,
+.memberShipForm .form-group ,.memberShipForm .form-group label{
+    width:100%;
+}
 .memberShipForm .form-group .form-control,.selectric-wrapper,.chzn-container,.custom-file{
     width:100% !important;
 }
