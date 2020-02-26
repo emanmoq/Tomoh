@@ -270,11 +270,11 @@
         </div>
         <div class="col-md-6">
           <div class="videoCont wow animate bounceIn" style="animation-delay:.2s; animation-duration: 1s;">
-            <iframe  id="videoplay" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
+            <iframe id="videoplay" src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0?">
             </iframe>
-          <!--  <video id="videoplay" src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4">
+            <!--  <video id="videoplay" src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4">
             </video>-->
-            <a class="playVideo"><i class="lni-play"></i></a>
+            <a class="playVideo" style="display: none;"><i class="lni-play"></i></a>
 
           </div>
         </div>
@@ -806,26 +806,54 @@
   </script>
 
 
+<!--
+    <script>
 
-  <script>
+
     var playButton = $(".playVideo");
+    var player;
+
+
+    // create the global player from the specific iframe (#video)
+
+
     playButton.click(function () {
-      if ($("#videoplay").get(0).paused == true) {
-        // Play the video
-        $("#videoplay").get(0).play();
 
-        // Update the button text to 'Pause'
-        playButton.html('<i class="lni-pause"></i>');
-      } else {
-        // Pause the video
-        $("#videoplay").get(0).pause();
 
-        // Update the button text to 'Play'
-        playButton.html('<i class="lni-play"></i>');
+      if (typeof (YT) == 'undefined' || typeof (YT.Player) == 'undefined') {
+
+        var tag = document.createElement('script');
+        tag.src = "//www.youtube.com/player_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+
+        firstScriptTag.parentNode.insertBefore(player, firstScriptTag);
+        window.onYouTubePlayerAPIReady = function () {
+          onYouTubePlayer();
+        }
       }
-    });
+        function onYouTubePlayer() {
+          player = new YT.Player('video', {
+            events: {
+              // call this function when player is ready to use
+              'onReady': onPlayerReady
+            }
+          });
+        }
+
+
+        var play_pause_status = "pause";
+        if (play_pause_status == "pause") {
+          // Play the video
+          player.playVideo();
+          play_pause_status = "play";
+          // Update the button text to 'Pause'
+          playButton.css("display", "none");
+        }
+      });
+      
 
   </script>
+-->
 
 
 </body>
