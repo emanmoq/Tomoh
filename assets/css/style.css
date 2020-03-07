@@ -1953,6 +1953,69 @@ input[type=number] {
 .footerreg .btn:hover{
     box-shadow: rgba(0, 0, 0, 0.1) 2px 3px 20px 3px;
 }
+.form-group.another{
+    width:100%;
+}
+.personalInfo .form-group.another label{
+    width:18%
+}
+.CourseBox{
+    width:75%;
+    background-color:  #fafafa;;
+    width:65%;
+float: left;
+}
+.CourseBox th{
+color:black;
+font-size: 13px;
+text-align: center;
+padding:10px;
+
+}
+.CourseBox td{
+    padding:10px;
+}
+.tableFormgroup.form-group{
+    width:100%;
+}
+.memberShipForm .tableFormgroup.form-group .form-control{
+
+    width:80%;
+    margin:10px;
+}
+tbody td {
+   
+    border-bottom: 1px solid #e6e6e6;}
+ 
+.CourseBox  tbody tr:hover{
+   background-color: #e1bdd0;
+}
+table label.tableLabel{
+width:20%;
+font-size:14px;
+}
+.personalInfo .form-group   label.tableLabel:last-child{
+    width:10%;
+}
+.memberShipForm .tableFormgroup.form-group .form-control.reqControl{
+    width:39%;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+
+  opacity: 1;
+}
+.serviceDetails{
+    resize: none;
+}
+.form-group div{
+    color:#5e5e5e;
+    font-size:12px;
+}
+.personalInfo .form-group.another label.textarealLabel {
+    width: 35%;
+}
 @media(min-width:320px)and (max-width:767px){
     #reg{
         padding:10px;
