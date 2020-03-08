@@ -2059,10 +2059,13 @@ color:#515151
     overflow: hidden;
     display: inline-block;
     margin-left:20px;
+    border:1px solid white;
+    border-radius: 50%;
 }
 
-.writerImg{
+.writerImg img{
 border-radius: 50%;
+
 }
 .wtriterName{
     display: inline-block;
@@ -2076,6 +2079,41 @@ color:#a8b6c3;
     font-size:16px;
    color:#515151;
    margin:0;
+}
+.headerBlogWriter{
+    margin-right:50px;
+}
+.headerBlogWriter .wtriterName h4{
+    color:white;
+}
+.blogdate{
+    color:white;
+    font-size: 25px;
+}
+.blogDetails .card-title{
+    font-size:22px;
+    color:#515151;
+
+}
+.blogDetails p{
+    color:#8d8d8d;
+    font-size:16px;
+    line-height: 1.5;
+    
+}
+.blogDetails{
+    margin-bottom:40px;
+}
+.blogReadMore{
+    font-size:26px;
+    color:black;
+    text-align: right;
+    font-weight: bold;
+    margin-bottom:50px;
+}
+.BlogDetaisImg{
+    width:30%;
+    float: left;
 }
 @media(min-width:320px)and (max-width:767px){
     #reg{

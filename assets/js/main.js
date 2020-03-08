@@ -98,7 +98,29 @@ jQuery(function ($) {
               }
               }
               });
-            },1000)
+              $('.blogCarusel').owlCarousel({
+                autoplay:true,
+                loop:true,
+                margin:10,
+                nav:true,
+                dots:true,
+                rtl:true,
+               
+                navText :['<i class="lni-chevron-right"></i>','<i class="lni-chevron-left"></i>'],
+                responsive:{
+                  0:{
+                    items:1
+                  },
+                  600:{
+                    items:2
+                  },
+                  1000:{
+                    items:4
+                  }
+                  }
+              });
+            },1000);
+
           
    
      
