@@ -2016,6 +2016,67 @@ input[type=number]::-webkit-outer-spin-button {
 .personalInfo .form-group.another label.textarealLabel {
     width: 35%;
 }
+.cardImg{
+    width:100%;
+    height: 30%;
+    overflow: hidden;
+}
+
+.Card.blogBox:hover{
+    box-shadow: .4px .9px 20px rgba(0,0,0,.2);
+    transition: all .5s;
+}
+.Card.blogBox{
+    color:black;
+    border-radius: 5px;
+    margin-bottom:20px;
+    box-shadow: .4px .9px 10px rgba(0,0,0,.1);
+    transition: all .5s;
+
+
+}
+.blogBox.Card .card-title{
+font-size:18px;
+color:#515151
+}
+.blogBox.Card .card-body{
+    padding: 10px;
+    text-align: right;
+    margin-bottom: 20px;
+    border:0;
+}
+.blogBox.Card:hover .card-title{
+    color:#7c013f
+}
+.blogBox.Card .card-body p{
+    font-size:14px;
+    color:#9b9b9b;
+    margin-bottom:25px;
+}
+.writerImg{
+    width:40px;
+    height:40px;
+    overflow: hidden;
+    display: inline-block;
+    margin-left:20px;
+}
+
+.writerImg{
+border-radius: 50%;
+}
+.wtriterName{
+    display: inline-block;
+}
+.wtriterName h6{
+margin-bottom:5px;
+font-size:14px;
+color:#a8b6c3;
+}
+.wtriterName h4{
+    font-size:16px;
+   color:#515151;
+   margin:0;
+}
 @media(min-width:320px)and (max-width:767px){
     #reg{
         padding:10px;
