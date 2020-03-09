@@ -964,13 +964,11 @@ text-decoration: underline;
 }
 .can-toggle input[type="checkbox"] {
     opacity: 0;
-    position: absolute;
     top: 0;
     left: 0;
+
   }
-  .can-toggle input[type="checkbox"][disabled] ~ label {
-    pointer-events: none;
-  }
+
   .can-toggle input[type="checkbox"][disabled] ~ label .can-toggle__switch {
     opacity: 0.4;
   }
