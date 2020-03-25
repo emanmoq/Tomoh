@@ -2154,14 +2154,15 @@ color:#a8b6c3;
 padding:12px 0;
 text-align: right;
 border-bottom: .5px solid #D8D8D8;
+position: relative;
 }
-.profileMenu li:hover{
-}
+
 .dropdown-menu.profiledropdownsubMenu{
 top:0;
-left:-68%;
+left:-71%;
+text-align: right;
 }
-.profileMenu li a{
+.profileMenu li a,.dropdown-menu.profiledropdownsubMenu .dropdown-item{
     font-size:14px;
     color:#515151;
     width:100%;
@@ -2190,7 +2191,9 @@ left:-68%;
     color: #515151;
     
 }
-
+.profileMenu li:hover .dropdown-menu.profiledropdownsubMenu{
+    display: block;
+}
 .profileMenu li:last-child{
     border:0;
 }
