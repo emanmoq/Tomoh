@@ -2206,8 +2206,42 @@ text-align: right;
     border-bottom: 5px solid white;
     right: 5%;
     top: -5px;
-   
   }
+  .sideProfileMenu{
+      background-color: white;
+      width:100%;
+  }
+  .sideProfileMenu li{
+      padding:20px 34px;
+      position: relative;
+      border-right:3px solid transparent;
+  }
+  .sideProfileMenu li a{
+      font-size:20px;
+  }
+  .sideProfileMenu li:hover{
+      border-right:3px solid #890046;
+  }
+  .sideProfileMenu .dropdown-menu.profiledropdownsubMenu{
+    left:-30%;
+    }
+    #contactadminBody{
+        padding-top:25px;
+        background-color:#F6F8F9;
+        padding-bottom:173px;
+    }
+    .adminForm .form-group{
+        width:45%
+    }
+    .adminForm .form-control{
+width:100%;
+    }
+    .admminmarginRight.form-group{
+        margin-right:62px;
+    }
+    .admintextarea{
+        margin-bottom:52px;
+    }
 @media(min-width:320px)and (max-width:767px){
     #reg{
         padding:10px;
