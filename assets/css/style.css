@@ -2118,7 +2118,7 @@ color:#a8b6c3;
     cursor: pointer;
     position: relative;
 }
-.profileSec::after {
+.profileSec::after,.profileSec.mobileProfile::after {
     content: "\EA45";
     font-family: LineIcons;
     border: 0;
@@ -2149,6 +2149,9 @@ color:#a8b6c3;
     right: 7% !important;
     top:5% !important;
     padding: 0 15px;
+}
+.mobileProfile{
+    display: none;
 }
 .profileMenu li{
 padding:12px 0;
@@ -2243,6 +2246,25 @@ width:100%;
         margin-bottom:52px;
     }
 @media(min-width:320px)and (max-width:767px){
+    .adminForm .form-group{
+        width:100%;
+    }
+    .admminmarginRight.form-group{
+        margin-right:0;
+    }
+    .adminForm .send{
+margin:20px 0;
+float: none;
+    }
+    .mobileProfile{
+        display: block;
+        position: relative;
+    }
+    .topHeader{
+        padding:10px 0;
+    }
+    #innerPage h1 {
+        font-size: 48px;}
     #reg{
         padding:10px;
     }
