@@ -2332,6 +2332,12 @@ width:68%;
  .myEventsTable .table-striped tbody tr:nth-of-type(odd){
     background-color:  #F6F8F9;
 }
+.myEventsTableDetails.myEventsTable .table-striped tbody tr:nth-of-type(even){
+    background-color:  #F6F8F9;
+}
+.myEventsTableDetails.myEventsTable .table-striped tbody tr:nth-of-type(odd){
+    background-color:  white;
+}
 .myEventsTable .table thead th{
     border:0;
 }
@@ -2362,6 +2368,12 @@ font-size:20px;
 }
 .myEventsTable td div span{
     color:#950851;
+}
+td.eventDeatilsTitle{
+    color:#515151
+}
+.myEventsTableDetails td span{
+margin:0 10px;
 }
 @media(min-width:320px)and (max-width:767px){
     .adminForm .form-group{
