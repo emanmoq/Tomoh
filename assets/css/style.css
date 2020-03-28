@@ -2323,6 +2323,46 @@ width:68%;
  .datainfo textarea.form-control{
      height:180px;
  }
+ .coloredBG{
+     background-color: #F6F8F9;
+ }
+ .myEventsTable .table-striped tbody tr:nth-of-type(even){
+     background-color:white;
+ }
+ .myEventsTable .table-striped tbody tr:nth-of-type(odd){
+    background-color:  #F6F8F9;
+}
+.myEventsTable .table thead th{
+    border:0;
+}
+.myEventsTable .table td, .table th{
+    border:0;
+}
+.myEventsTable .table-striped thead tr{
+    background-color: white;
+  
+}
+.myEventsTable .table-striped thead tr th{
+    font-size: 20px;
+    color:#515151;
+    font-weight: 400;;
+}
+.myEventsTable .table-striped tbody tr td a{
+color:#950851;
+font-size:20px;
+}
+.myEventsTable .eventPlace,td{
+    font-size: 20px;
+    color:#8E8E93;
+    text-align: center;
+}
+.myEventsTable td div{
+    font-size:15px;
+    color:#8E8E93;
+}
+.myEventsTable td div span{
+    color:#950851;
+}
 @media(min-width:320px)and (max-width:767px){
     .adminForm .form-group{
         width:100%;
