@@ -2260,7 +2260,8 @@ width:100%;
     }
     #image{
         opacity: 0;
-        position: absolute
+        display: inline-block;
+        
     }
     .personalDataPage .form-group{
         width:100%;
@@ -2357,6 +2358,18 @@ float: none;
     }
     #descktopMenu{
         display:none;
+    }
+    .selectric-margin-form-group{
+        margin-right:0;
+    }
+    .selectric-margin-form-group.selectric-qualification{
+margin-right:0;
+    }
+    .personalInfo .form-group label.profile{
+        width:100%;
+    }
+    .margin-form-group{
+        margin-right: 0;;
     }
     .close{color:white;}
     .mobileNav nav.navbar {
@@ -2552,6 +2565,23 @@ right:96px;}
 }
 .counterNum{
     font-size:45px
+}
+.uploadImg{
+    width:55px;
+    height: 55px;;
+}
+.personalInfo .form-group label.uploadImgLabel{
+    font-size: 16px;
+}
+.datainfo .passwordHint{
+    font-siZe:16px;
+}
+.personalDataPage  .selectric-wrapper,.datainfo .chzn-container{
+    margin-bottom: 20px;
+    
+}
+.innerrNav{
+    padding: 13px 0;
 }
 }
 @media(min-width:768px)and (max-width:1200px){
