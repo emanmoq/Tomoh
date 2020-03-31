@@ -2375,6 +2375,22 @@ td.eventDeatilsTitle{
 .myEventsTableDetails td span{
 margin:0 10px;
 }
+.langTable{
+    width:63%;
+    display: inline-block;
+}
+.langTable .table-striped th,.langTable .table-striped tbody td{
+    font-size: 16px;
+}
+.langTable .table-striped tbody tr:nth-of-type(even){
+    background-color:  white;
+}
+.langTable .table-striped thead{
+    background-color:  white;
+}
+.lang-group label{
+    vertical-align: top;
+}
 @media(min-width:320px)and (max-width:767px){
     .adminForm .form-group{
         width:100%;
@@ -2634,6 +2650,9 @@ right:96px;}
 }
 .innerrNav{
     padding: 13px 0;
+}
+.langTable{
+    width:100%;
 }
 }
 @media(min-width:768px)and (max-width:1200px){

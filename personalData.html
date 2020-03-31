@@ -649,13 +649,109 @@
                     <option value='8'>بروفسير</option>
                   </select>
                 </div>
-                <div class="form-group">
+                <div class="form-group lang-group">
+                  <label for="">اللغات التي تتحدث بها</label>
 
-                  <select tabindex="Chose your destiny" class="chosen-select chosen-rtl" name="field[]" tabindex="4"
-                    multiple data-placeholder="اللغات اللتي تتحدث بها">
-                    <option value='1'> العربية</option>
-                    <option value='2'>الانجليزية </option>
-                  </select>
+                  <div class="langTable">
+                    <div class="table-responsive">
+                      <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">اللغة</th>
+                            <th scope="col"> ممتاز</th>
+                            <th scope="col">جيد </th>
+                            <th scope="col"> ضعيف</th>
+                            <th scope="col"> محادثة</th>
+                            <th scope="col"> كتابة</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              العربية
+                            </td>
+                            <td>
+                              <input type="radio">
+                            </td>
+                            <td>
+                              <input type="radio">
+                            </td>
+                            <td>
+                              <input type="radio">
+                            </td>
+                            <td>
+                              <input type="checkbox">
+                            </td>
+                            <td>
+                              <input type="checkbox">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              الانجليزية
+                            </td>
+                            <td>
+                              <input type="radio">
+                            </td>
+                            <td>
+                              <input type="radio">
+                            </td>
+                            <td>
+                              <input type="radio">
+                            </td>
+                            <td>
+                              <input type="checkbox">
+                            </td>
+                            <td>
+                              <input type="checkbox">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              الفرنسية
+                            </td>
+                            <td>
+                              <input type="radio">
+                            </td>
+                            <td>
+                              <input type="radio">
+                            </td>
+                            <td>
+                              <input type="radio">
+                            </td>
+                            <td>
+                              <input type="checkbox">
+                            </td>
+                            <td>
+                              <input type="checkbox">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              أخرى
+                            </td>
+                            <td>
+                              <input type="radio">
+                            </td>
+                            <td>
+                              <input type="radio">
+                            </td>
+                            <td>
+                              <input type="radio">
+                            </td>
+                            <td>
+                              <input type="checkbox">
+                            </td>
+                            <td>
+                              <input type="checkbox">
+                            </td>
+                          </tr>
+                        </tbody>
+
+                      </table>
+                    </div>
+                  </div>
+
                 </div>
                 <div class="form-group">
                   <label class="profile" style="color:#515151"> أتاحة البروفايل للجميع <div>اتاحة مشاهدة الملف الشخصي
@@ -713,12 +809,74 @@
                     <option value='17'>تعليم اللغة العربية</option>
                   </select>
                 </div>
-                <div class="form-group">
-                  <select class="select">
-                    <option selected disabled> ما مدى تمكنك من استخدام الكمبيوتر</option>
-                    <option value='1'>ممتاز</option>
-                    <option value='2'>جيد</option>
-                  </select>
+                <div class="form-group lang-group">
+                  <label for=""> مامدى تمكنك من استخدام الكمبيوتر</label>
+
+                  <div class="langTable">
+                    <div class="table-responsive">
+                      <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">البرنامج</th>
+                            <th scope="col"> ممتاز</th>
+                            <th scope="col">جيد جدا </th>
+                            <th scope="col"> جيد</th>
+                        
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              أوفيس
+                            </td>
+                            <td>
+                              <input type="radio">
+                            </td>
+                            <td>
+                              <input type="radio">
+                            </td>
+                            <td>
+                              <input type="radio">
+                            </td>
+                 
+                          </tr>
+                          <tr>
+                            <td>
+                              فوتوشوب
+                            </td>
+                            <td>
+                              <input type="radio">
+                            </td>
+                            <td>
+                              <input type="radio">
+                            </td>
+                            <td>
+                              <input type="radio">
+                            </td>
+           
+                          </tr>
+                          <tr>
+                            <td>
+                              أخرى
+                            </td>
+                            <td>
+                              <input type="radio">
+                            </td>
+                            <td>
+                              <input type="radio">
+                            </td>
+                            <td>
+                              <input type="radio">
+                            </td>
+                     
+                          </tr>
+                   
+                        </tbody>
+
+                      </table>
+                    </div>
+                  </div>
+
                 </div>
                 <div class="form-group">
                   <span class="passwordHint">هل لديك الاستعداد للمشاركه في الانشطه التطوعيه خارج الدوله؟</span>
@@ -732,19 +890,19 @@
                 <div class="form-group ">
                   <span class="passwordHint">
                     أسباب التطوع ؟</span>
-                    <input type="text" class="form-control" placeholder="اكتب هنا">
-    
+                  <input type="text" class="form-control" placeholder="اكتب هنا">
+
                 </div>
                 <div class="form-group" style="width:100%">
                   <span class="passwordHint">
-                     ملاحظات</span>
-                     <textarea name=""  class="form-control" placeholder="اكتب ملاحظات او كلمة لملفك الشخصي"></textarea>
+                    ملاحظات</span>
+                  <textarea name="" class="form-control" placeholder="اكتب ملاحظات او كلمة لملفك الشخصي"></textarea>
                 </div>
 
 
               </div>
               <div class="footerreg float-left">
-              
+
                 <button type="submit" class="saveBtn btn">
                   حفظ البيانات</button>
               </div>
@@ -1010,7 +1168,7 @@
     $("select.chosen-select").chosen({
       rtl: true,
       height: "55px",
-        
+
     });
 
 
