@@ -2199,7 +2199,7 @@ text-align: right;
 }
 
 .profileMenu li:last-child{
-    border:0;
+    border-bottom:0;
 }
 .arrow-up {
     width: 0; 
@@ -2390,6 +2390,159 @@ margin:0 10px;
 }
 .lang-group label{
     vertical-align: top;
+}
+.academyBox.blogBox.Card .card-title{
+    font-size:15px;
+}
+.coursesHours {
+    MARGIN:15PX 0;
+}
+.coursesHours span{
+    font-size:15px;
+    color:#7c013f
+}
+.academyBox.blogBox.Card .writerImg,.myEventsTable .writerImg{
+margin-left:0;
+}
+.myEventsTable .wtriterName{
+    vertical-align: middle;
+}
+.myEventsTable.AcademyTable td div{
+    vertical-align: middle;
+}
+.sideProfileMenu.academyMenu li:first-child:hover{
+    border-right:0;
+}
+.academyMenu li a.active{
+color:#7c013f;
+}
+
+.academyMenu li a{
+    width: 100%;
+    display: block;
+}
+.finished{
+    position: relative;
+    width:100%;
+    display: block;
+}
+.finished:after{
+    content: "\e94c";
+    position: absolute;
+    float: left;
+    color:#7c013f;
+  font-family:LineIcons;
+  left:0;
+
+}
+.startExam{
+    color:white;
+    background-color:#7c013f;
+    text-align: center;
+    display: block;
+    margin-top:20px;
+    padding:20px;
+    border:1px solid #7c013f;
+    transition: all .5s;
+
+}
+.startExam:hover{
+    color:#7c013f;
+    background-color: white;
+    transition: all .5s;
+    
+}
+.lessonVideoSection{
+    width:100%;
+    margin-bottom:50px;
+    border-radius: 5px;
+    overflow:hidden;
+}
+.videoLessonSlider{
+    background-color: white;
+    border-radius: 5px;
+    padding:10px;
+    margin-bottom:20px;
+
+}
+.lessonVideoSection iframe{
+    width:100%;
+}
+.VideoDisplay{
+    height:500px;
+}
+.examTitle{
+    font-size:16px;
+    color:#7C013F;
+}
+.examDeg{
+    background-color: white;
+padding:10px;
+width:100%;
+color:black;
+border-radius: 5px;
+
+}
+.examDeg span{
+    font-size:14px;
+    color:#8d8d8d
+}
+.questions{
+    color:black;
+    font-size:16px;
+    margin:20px 0;
+}
+.answers{
+    background-color:white;
+    padding:10px;
+    width:100%;
+    border-radius: 5px;
+}
+.answers label{
+    color:black;
+    display: block;
+    width:100%;
+}
+.answers label input{
+    margin-left: 10px;
+}
+.examTail{
+    margin:20px 0;
+}
+.examTail .btn{
+    width:45%;
+    padding:20px;
+    color:white;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,.2);
+    transition: all .2s;
+    border:1px solid #7d003f;
+}
+.examTail .btn:last-child{
+    margin-right:20px;
+}
+.sureBtn{
+    background-color:#7C013F ;
+}
+
+
+.examTail .cancelBtn{
+    background-color:white;
+    color:black
+}
+.finalDeg{
+    background-color: white;
+    border-radius: 5px;
+    padding:10px;
+    text-align: center;
+    margin:20px 0;
+}
+.finalDeg h5{
+color:#5e5e5e;
+font-size:17px;
+}
+.finalDeg p{
+font-size:40px;
+color:#7c013f
 }
 @media(min-width:320px)and (max-width:767px){
     .adminForm .form-group{
