@@ -20,6 +20,8 @@ body{direction: rtl;
     color:white;
     text-align: right;
     position: relative;
+    overflow-x: hidden;
+
 }
 img{
     width:100%;
@@ -1309,6 +1311,13 @@ button.navbar-toggler {
         height: 3px;
    
     }
+    .custom-file{
+        display: block !important;
+        margin-top:20px;
+    }
+    .chzn-drop{
+        right:0 !important
+    }
     @-webkit-keyframes nav1 {
         50% {
           -webkit-transform: rotate(0deg); }
@@ -2544,6 +2553,52 @@ font-size:17px;
 font-size:40px;
 color:#7c013f
 }
+.testContaner{
+    background-color: #fff;
+    border:1px solid #e6e6e6;
+    margin-top: 120px;
+   margin-bottom: 65px;
+    padding:70px 30px 20px;;
+    position: relative;
+  
+}
+.testmonial{
+    color:#999}   
+    .TestDesc{
+        border: 3px solid #7c013f;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        top: -50px;
+       left: 60px;
+        
+    }
+    .TestDesc img{
+        width: 100%;
+        display: inline-block;
+        border-radius: 50%;
+    }
+    .testInfo h2 a,
+    .testInfo h4 a{
+        font-size: 18px;
+        text-decoration: none;
+        color: 414141;
+        transition: all 0.3s ease-in-out 0s;
+   
+    }
+ .testInfo h4 a{
+        color:#C2C2C2;
+        font-size: 16px;
+    }
+
+    .testInfo h2 a:hover{
+        color: #7c013f;
+        transition: all 0.3s ease-in-out 0s;
+    }
+    .testText p{
+        color:#515151
+    }
 @media(min-width:320px)and (max-width:767px){
     .adminForm .form-group{
         width:100%;

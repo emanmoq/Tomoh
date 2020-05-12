@@ -47,7 +47,7 @@ jQuery(function ($) {
               margin:10,
               nav:true,
               dots:true,
-              rtl:true,
+           
               items:1,
               navText :['<i class="lni-chevron-right"></i>','<i class="lni-chevron-left"></i>'],
             });
@@ -58,7 +58,7 @@ jQuery(function ($) {
                 loop:true,
                 margin:70,
                 dots:true,
-                rtl:true,
+            
               responsive:{
               0:{
                 items:1,
@@ -84,7 +84,7 @@ jQuery(function ($) {
                 loop:true,
                 margin:17,
                 nav:true,
-                rtl:true,
+            
                 navText :['<i class="fas fa-chevron-right"></i>','<i class="fas fa-chevron-left"></i>'],
               responsive:{
               0:{
@@ -98,29 +98,7 @@ jQuery(function ($) {
               }
               }
               });
-              $('.blogCarusel').owlCarousel({
-                autoplay:true,
-                loop:true,
-                margin:10,
-                nav:true,
-                dots:true,
-                rtl:true,
-               
-                navText :['<i class="lni-chevron-right"></i>','<i class="lni-chevron-left"></i>'],
-                responsive:{
-                  0:{
-                    items:1
-                  },
-                  600:{
-                    items:2
-                  },
-                  1000:{
-                    items:4
-                  }
-                  }
-              });
-            },1000);
-
+            },1000)
           
    
      
