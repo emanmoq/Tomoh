@@ -196,13 +196,22 @@
             <div class="row justify-content-center">
                 <div class="col-md-12">
                     <div class="lessonVideoSection">
+                        <!--   <iframe src="https://www.youtube.com/embed/9z44M1S-wj0" class="VideoDisplay"></iframe>-->
+                        <video  controls>
+                            <source src="assets/1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="lessonVideoSection">
                         <iframe src="https://www.youtube.com/embed/9z44M1S-wj0" class="VideoDisplay"></iframe>
+                        <!--   <video width="320" height="240" controls>
+                               <source src="assets/1.mp4" type="video/mp4">
+                           </video>-->
                     </div>
                     <div class="videoLessonSlider">
                         <div class="row">
                             <div class="col-md-2">
-                                <iframe title="" src="https://www.youtube.com/embed/b2Vl9RAR5Xg" class="videosList"
-                                   ></iframe>
+                                <iframe title="" src="https://www.youtube.com/embed/b2Vl9RAR5Xg"
+                                    class="videosList"></iframe>
                             </div>
                             <div class="col-md-2">
                                 <a title="تقرير تلفزيون قطر في المعرض المهني 21/04/2013"
@@ -215,6 +224,11 @@
                                     href="https://www.youtube.com/embed/9z44M1S-wj0"><img
                                         alt="تقرير تلفزيون قطر في المعرض المهني 21/04/2013"
                                         src="https://img.youtube.com/vi/9z44M1S-wj0/0.jpg"></a>
+                            </div>
+                            <div class="col-md-2">
+                           <a href="">     <video  controls>
+                                    <source src="assets/1.mp4" type="video/mp4">
+                                </video></a>
                             </div>
 
                         </div>
@@ -501,16 +515,16 @@
             height: "55px",
 
         });
- /*       if ($(".academyMenu li:last-child a").hasClass("finished")) {
-            $(".startExam").css("display", "block");
-        }
-        else {
-            $(".startExam").css("display", "none");
-
-        }*/
+        /*       if ($(".academyMenu li:last-child a").hasClass("finished")) {
+                   $(".startExam").css("display", "block");
+               }
+               else {
+                   $(".startExam").css("display", "none");
+       
+               }*/
         $(".videosList").click(function () {
             $(".VideoDisplay").attr("src", function (index, old) {
-                return old.replace( $(".VideoDisplay").attr("src"),$(".videosList").attr("src"));
+                return old.replace($(".VideoDisplay").attr("src"), $(".videosList").attr("src"));
             });
 
         })
