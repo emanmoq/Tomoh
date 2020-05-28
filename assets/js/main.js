@@ -13,10 +13,7 @@ jQuery(function ($) {
            }
            else{
               $('header').removeClass('scrollNav');    
-        
            }
-           
-        
           });
           function onScroll(event){
 			
@@ -47,17 +44,18 @@ jQuery(function ($) {
               margin:10,
               nav:true,
               dots:true,
-           
               items:1,
+           rtl:true,
               navText :['<i class="lni-chevron-right"></i>','<i class="lni-chevron-left"></i>'],
             });
-            setTimeout(function(){
-        
+            setTimeout(function(){   
               $('.partnerSlider').owlCarousel({
                 autoplay:true,
                 loop:true,
                 margin:70,
                 dots:true,
+                rtl:true,
+
             
               responsive:{
               0:{
@@ -84,7 +82,7 @@ jQuery(function ($) {
                 loop:true,
                 margin:17,
                 nav:true,
-            
+                rtl:true,
                 navText :['<i class="fas fa-chevron-right"></i>','<i class="fas fa-chevron-left"></i>'],
               responsive:{
               0:{
@@ -98,10 +96,7 @@ jQuery(function ($) {
               }
               }
               });
-            },1000)
-          
-   
-     
+            },1000);
             $(".close").click(function(){
               $('.navbar-collapse').collapse("hide");
               $(".overlay").css("display","none");
