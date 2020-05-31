@@ -1385,6 +1385,9 @@ button.navbar-toggler {
         box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.1);
         padding:37px 0;
         }
+        .innerrNav.innerProfile{
+            padding:0 0 10px;
+        }
         .innerrNav .nav-link{
 color:white;
         }
@@ -2903,7 +2906,15 @@ right:96px;}
 .memberShipForm .form-group .form-control,.selectric-wrapper,.chzn-container,.custom-file{
     width:100% !important;
 }
-
+.dropdown-menu.dropdownProfileMenu {
+    width: 262px;
+    background-color: white;
+    right: -27% !important;}
+    .arrow-up {
+  
+   
+        right: 25%;
+       }
 .loginInfo span {
 
     right: 0;
