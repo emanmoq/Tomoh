@@ -777,7 +777,7 @@
               <div class="personalInfo contactInfo datainfo clearfix">
                 <h4 class="formRegTitle"> معلومات في الاهتمام والتواصل</h4>
                 <div class="form-group">
-                  <select tabindex="2" class="select" name="field[]" tabindex="4">
+                  <select tabindex="2"\ class="select" name="field[]">
                     <option selected disabled> الاوقات المفضلة للتطوع</option>
                     <option value='1'>الفترة الصباحية</option>
 
@@ -788,7 +788,7 @@
 
                 <div class="form-group ">
                   <span class="passwordHint">المجالات التي ترغب في التطوع بها </span>
-                  <select class="chosen-select pagedatainfo" name="field[]" tabindex="4" multiple
+                  <select class="chosen-select pagedatainfo" name="field[]" tabindex="4" multiple="multiple"
                     data-placeholder="يمكنك اختيار أكثر من مجال ">
                     <option value='1'>الاعلام (التحرير-التدقيق اللغوي)</option>
                     <option value='2'>الاعلام (التصميم الفني والجرافيك)</option>
@@ -1137,23 +1137,14 @@
     $('.select').selectric({
       disableOnMobile: false,
       nativeOnMobile: false,
-      dir: "ltr"
-    });
+      });
   </script>
   <script type="text/javascript" src="assets/js/main.js"></script>
   <script type="text/javascript" src="assets/js/jquery1.js"></script>
   <script type="text/javascript" src="assets/js/chosen.js"></script>
   <script src="assets/js/waypoints-min.js"></script>
   <script type="text/javascript" src="assets/js/countUp.js"></script>
-  <!--
-  <script type="text/javascript" src="assets/js/chosen.js"></script>
-  <script type="text/javascript" src="assets/js/customInput.jquery.js"></script>
-  <script type="text/javascript" src="assets/js/fullcalendar.js"></script>
-  <script type="text/javascript" src="assets/js/timepicker.js"></script>
-  <script type="text/javascript" src="assets/js/elfinder.full.js"></script>
-  <script type="text/javascript" src="assets/js/iphoneCheck.js"></script>
-  <script type="text/javascript" src="assets/js/zice.custom.js"></script>
-  -->
+
   <script>
     jQuery.browser = {};
     (function () {
@@ -1166,13 +1157,8 @@
     })();
 
     $("select.chosen-select").chosen({
-      rtl: true,
       height: "55px",
-
     });
-
-
-
 
   </script>
 
