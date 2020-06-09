@@ -38,6 +38,33 @@ jQuery(function ($) {
             $('.up a').on('click', function () {
               $('html, body').animate({ scrollTop: $(this.hash).offset().top  }, 1000);
             });
+            $('.blogCarusel').owlCarousel({
+              autoplay:true,
+              loop:true,
+              margin:10,
+        
+           rtl:true,
+              navText :['<i class="lni-chevron-right"></i>','<i class="lni-chevron-left"></i>'],
+              responsive:{
+                0:{
+                  items:1,
+                  margin:5,
+  
+                },
+                600:{
+                  items:2,
+                  margin:5,
+                },
+                1000:{
+                  items:4,
+                  margin:5,
+                },
+                1300:{
+                  items:4,
+                  
+                }
+                }
+            });
             $('.heroSlider').owlCarousel({
               autoplay:true,
               loop:true,
