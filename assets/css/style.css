@@ -2640,7 +2640,111 @@ color:#7c013f
     .EventDetailsDesc p{
         color:#515151
     }
-    
+    .whoWeAreBox{
+        width:100%;
+        border-radius: 6px;
+        box-shadow: 5px 10px 30px rgba(47, 46, 52,.16 );
+        padding:50px;
+        text-align: center;
+    margin-bottom:65px;
+        
+    }
+    .whoWeAreBox.margin-topBox{
+        margin-top:-200px;
+        position: relative;
+        z-index: 2;
+    }
+    .whoWeAreBox h2,.outrTemTitle h2{
+        font-size:40px;
+        color:black;
+        font-family: a-jannat-lt-bold;
+    }
+    .outrTemTitle p,.whoWeAreBox p{
+font-size:28px;
+color:#515151;
+margin-top: 18px;
+    }
+    #howweArePage{
+      background-color: white;  
+      padding-bottom:180px;
+
+    }
+    .whoweareHeader{
+        height:300px;
+        position: relative;
+        z-index: 1;
+    }
+    #howweArePage .tomohLetterRight{
+        width:405px;
+        height: 410px;
+        right:0;
+        position: absolute;
+        z-index: -1;
+    }
+    .ourTeamcarItem{
+    width:256px;
+    height:256px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top:100px;
+    position: relative;
+    }
+    .ourTeamcarItem:before{
+        position: absolute;
+        content:"";
+        left: 20%;
+        right: 20%;
+        top: 20%;
+        bottom: 20%;
+        background-color: rgba(151, 0, 78, .82);
+        border-radius: 50%;
+        opacity: 0;
+        transition: all .5s;
+    }
+    .ourTeamcarItem:hover:before{
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        opacity: 1;
+        transition: all .5s;
+    }
+    .ourTeamcarItem figcaption{
+        position: absolute;
+        top: 30%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        margin: -7px 0 0 0;
+        opacity:0
+    }
+    .ourTeamcarItem:hover figcaption{
+        opacity: 1;
+    }
+    .teamCarName{
+        color:white;
+        font-size:24px;
+        margin-bottom:5px;
+    }
+    .teamCarDetails{
+        font-size:17px;
+        margin-bottom: 15px;;
+    }
+    .outrTemTitle{
+        margin-top: 30px;;
+    }
+    .teamCarSocialContact{
+        direction: ltr;
+        margin-top:20px;
+    }
+    .teamCarSocialContact li{
+        display: inline-block;
+    }
+    .teamCarSocialContact li a{
+        color:white;
+        margin-right:15px;
+    }
 @media(min-width:320px)and (max-width:767px){
     .adminForm .form-group{
         width:100%;
@@ -2651,6 +2755,7 @@ color:#7c013f
     .adminForm .send{
 margin:20px 0;
 float: none;
+
     }
     .mobileProfile{
         display: block;

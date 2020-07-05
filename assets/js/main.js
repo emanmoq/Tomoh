@@ -123,6 +123,24 @@ jQuery(function ($) {
               }
               }
               });
+              $('.ourTeamCar').owlCarousel({
+                autoplay:true,
+                loop:true,
+                margin:17,
+                rtl:true,
+              responsive:{
+              0:{
+                items:1
+              },
+              600:{
+                items:2
+              },
+              1000:{
+                items:4
+              }
+              }
+              });
+              
             },1000);
             $(".close").click(function(){
               $('.navbar-collapse').collapse("hide");
