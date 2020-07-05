@@ -1373,7 +1373,7 @@ button.navbar-toggler {
         #innerPage{
             position: relative;
             background-color:#97004e;
-            z-index: 0;
+            z-index: -1;
             padding:60px 0;
             text-align: center;
            
@@ -2649,10 +2649,9 @@ color:#7c013f
     margin-bottom:65px;
         
     }
-    .whoWeAreBox.margin-topBox{
-        margin-top:-200px;
-        position: relative;
-        z-index: 2;
+    
+    #whoPar{
+margin-top:-200px;
     }
     .whoWeAreBox h2,.outrTemTitle h2{
         font-size:40px;
@@ -2671,8 +2670,7 @@ margin-top: 18px;
     }
     .whoweareHeader{
         height:300px;
-        position: relative;
-        z-index: 1;
+  
     }
     #howweArePage .tomohLetterRight{
         width:405px;
