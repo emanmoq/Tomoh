@@ -2744,6 +2744,21 @@ margin-top: 18px;
         color:white;
         margin-right:15px;
     }
+    .searchFamily{
+        position: relative;
+    }
+    .searchFamily i{
+        position: absolute;
+        color: #515151;
+        left: 7px;
+        top: 20px;
+    }
+    .searchFamily .form-group{
+        width:100%;
+    }
+    .searchFamily .form-group .form-control{
+        width:100%;
+    }
 @media(min-width:320px)and (max-width:767px){
     .adminForm .form-group{
         width:100%;
