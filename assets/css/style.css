@@ -452,7 +452,7 @@ padding-top:13px;
 
 }
 #news{
-    padding-top:140px;
+    padding-top:28px;
     padding-bottom:135px;
     position: relative;
 }
@@ -498,16 +498,79 @@ font-size:24px;
     margin-top:20px;
  
 }
-.projBox p{
-    font-size:1em;
-    color:#9b9b9b;
-    padding:5px;
+
+/******************/
+#innerPage h1.newsDetailsTitle{
+    font-size:30px;
+    text-align: right !important;
+    margin-right: 50px;
+    max-width: 48%;
+    float: right;
 }
-.projBox{
+
+#innerPage .newsDate{
+float: left;
+width: 35%;
+color: white;
+text-align: left;
+display: inline-block;
+
+}
+.newsDetailsDesc{
+display: inline-block;
+float: right;
+width:45%;
+margin-left:20px;
+}
+.ProjImg{
+    display: inline-block;
+    width:45%;
+    float: left;
+}
+.newsDetailsDescpar{
+    color:#515151;
+    font-size: 17px;
+    line-height: 2.5;
+    float: left;
+}
+.newsCarItem.card{
     background-color:white;
-    width:100%;
-    box-shadow: 0 0 10px 2px rgba(0,0,0,.1)
+    border-radius: 6px;
+    border:0;
+    box-shadow: 5px 7px 10px rgba(47, 46, 52,.12);
+   
+    
+
 }
+.newsCarItem.card .card-body{
+padding: 10px;;
+box-shadow: none;
+border:0;
+text-align: right;
+}
+.newsCarItem.card .card-title{
+    font-size:14px;
+    color:black
+}
+.newsCar.owl-carousel .owl-stage{
+padding: 20px 15px ;
+}
+.newsCar.owl-carousel .owl-stage-outer{
+    width:111%;
+}
+.newsCarItem.card .card-text{
+    font-size:13px;;
+    color:#989DB3;
+}
+.latest{
+    font-size:22px;
+    margin-top:110px;
+    margin-bottom:50px;
+    font-family: a-jannat-lt-bold;
+color:black;
+padding:20px;
+}
+/*****************/
 .newsTitle a{
     color:black;
 }
@@ -2797,6 +2860,36 @@ margin-top: 18px;
         margin: 15px;
     }
 @media(min-width:320px)and (max-width:767px){
+    #innerPage h1.newsDetailsTitle, #innerPage .newsDate{
+        width: 100%;
+        float: right;
+        text-align: right;
+        margin-right: 25px;;
+    }
+    .newsDetailsDesc{
+        width:100%;
+    }
+    #news{
+        padding:20px;;
+    }
+    .latest{
+        margin:20px !important
+    }
+    .newsCar.owl-carousel .owl-stage-outer{
+        width:100%;
+    }
+    .newsCar.owl-carousel .owl-stage{
+        padding: 5px ;
+        }
+    .ProjImg{
+        width:100%;
+    }
+    #innerPage h1.newsDetailsTitle{
+        font-size:25px;
+        text-align: right !important;
+        margin-right: 0;
+        max-width: 100%;
+    }
     .pagination .page-item{
         margin:0;
     }
@@ -2966,7 +3059,6 @@ padding:5;
     .titleDetails {
         font-size: 15px;}
       #news {
-            padding-top: 45px;
             padding-bottom: 45px;}
     #gallery {
                 padding-top: 50px;
