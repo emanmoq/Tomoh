@@ -843,10 +843,7 @@ footer .footerSec:last-child{
 .footerSec p{
     font-size:20px;
 }
-.footerList{
-    display: inline-block;
-    margin-left:80px;
-}
+
 .footerList:last-child{
     margin-left:0;
 }
@@ -1744,6 +1741,11 @@ color:white;
 .partnertsPage .partnerItem,.volunteerPage .partnerItem{
 margin-top:50px;
 height: 120px;
+transition: all  .5s;;
+}
+.partnertsPage .partnerItem:hover{
+transform: scale(1.1);
+transition: all  .5s;;
 }
 .volunteerName{
     font-size:18px;
@@ -2782,10 +2784,45 @@ color:#7c013f
     #innerBody.ourFamily{
         padding:50px 0;
     }
+    /*************************/
     .lessonVideoSection video{
         width: 100%;
-        height:500px;
+        height:auto;/**************/
     }
+    .blogTitle{
+        font-size:30px; 
+        margin-bottom:20px;
+    }
+    #innerBody.contactBody{
+        padding-top:0;
+    }
+    .map{
+        margin-top:20px;
+    }
+    .googlePlay{
+     
+        float: right;
+        width: 100%;
+    margin: auto;
+    margin-top:50px;
+    }
+    .appPlay{
+        margin: 10px;
+        display: inline-block;
+        width: 24%;
+
+    }
+    footer .googlePlay{
+        display: inline-block;
+    }
+    .footerList{
+        display: inline-block;
+        margin-left:60px;
+    }
+    .blogdate H2{
+        font-size:20px;
+    }
+    /**************************/
     .videoLessonSlider video{
         width:100%;
         height: 100%;;
@@ -2860,6 +2897,23 @@ margin-top: 18px;
     overflow: hidden;
     margin-top:100px;
     position: relative;
+    }
+    .ourTeamCar  .owl-nav button{
+        position: absolute;
+        top:50%;
+    }
+    .ourTeamCar  .owl-nav button.owl-next{
+        left:-10%;
+    }
+    .ourTeamCar  .owl-nav button.owl-prev{
+        right:-10%;
+    }    .ourTeamCar  .owl-nav button:focus{
+        outline: 0;
+    }
+    .ourTeamCar  .owl-nav button span{
+        color:#98014e;
+        font-size: 80px;
+        font-weight: bold;
     }
     .ourTeamcarItem:before{
         position: absolute;

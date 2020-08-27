@@ -74,7 +74,7 @@ a<html>
                             <div class="dropdown-menu" aria-labelledby="media">
                                 <a class="dropdown-item" href="#">Action</a>
                                 <a class="dropdown-item" href="#">Another action</a>
-                                 <div class="dropdown-divider"></div>
+                                <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Something else here</a>
                             </div>
                         </li>
@@ -188,7 +188,7 @@ a<html>
 
         </div>
     </section>
-    <section id="innerBody">
+    <section id="innerBody" class="contactBody">
         <section id="contact">
             <div class="container">
                 <div class="row">
@@ -207,36 +207,52 @@ a<html>
                             <h4 class=""> البريد الالكتروني</h4>
                             <span class=""><a href="#">info@tomoh.org</a></span>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="contactForm">
-                            <form>
-                                <div class="form-group">
-                                    <input type="text" class="form-control wow flipInX"
-                                        style="animation-delay:.2s; animation-duration: 1s;" placeholder="الاسم">
-                                    <input type="email" class="form-control wow flipInX"
-                                        style="animation-delay:.4s; animation-duration: 1s;"
-                                        placeholder="البريد الالكتروني">
-                                </div>
+                        <!--Map-->
 
-                                <div class="form-group">
-                                    <input type="text" class="form-control wow flipInX"
-                                        style="animation-delay:.6s; animation-duration: 1s;" placeholder="العنوان ">
-                                    <input type="text" class="form-control wow flipInX"
-                                        style="animation-delay:.8s; animation-duration: 1s;" placeholder="رقم الجوال ">
+                            <object style="border:0; height: 250px; width: 100%;" class="map"
+                                data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34015.943594576835!2d-106.43242624069771!3d31.677719472407432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75d90e99d597b%3A0x6cd3eb9a9fcd23f1!2sCourtyard+by+Marriott+Ciudad+Juarez!5e0!3m2!1sen!2sbd!4v1533791187584">
+                            </object>
+
+                        
+
+                        </div>
+                        <!--End Map-->
+                        <div class="col-md-6">
+                            <div class="contactForm">
+                                <form>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control wow flipInX"
+                                            style="animation-delay:.2s; animation-duration: 1s;" placeholder="الاسم">
+                                        <input type="email" class="form-control wow flipInX"
+                                            style="animation-delay:.4s; animation-duration: 1s;"
+                                            placeholder="البريد الالكتروني">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="text" class="form-control wow flipInX"
+                                            style="animation-delay:.6s; animation-duration: 1s;" placeholder="العنوان ">
+                                        <input type="text" class="form-control wow flipInX"
+                                            style="animation-delay:.8s; animation-duration: 1s;"
+                                            placeholder="رقم الجوال ">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea type="text" class="form-control textareaForm wow flipInX"
+                                            style="animation-delay:1s; animation-duration: 1s;">اكتب رسالتك هنا</textarea>
+                                    </div>
+                                    <button type="submit" class="send wow zoomIn"
+                                        style="animation-delay:1.2s; animation-duration: 1s;">
+                                        أرسل</button>
+                                     
+                                </form>
+                                <div class="googlePlay">
+                                    <a href="#" class="appPlay"><img src="assets/images/app.png" alt=""></a>
+                                    <a href="#" class="appPlay"><img src="assets/images/google.png" alt=""></a>
                                 </div>
-                                <div class="form-group">
-                                    <textarea type="text" class="form-control textareaForm wow flipInX"
-                                        style="animation-delay:1s; animation-duration: 1s;">اكتب رسالتك هنا</textarea>
-                                </div>
-                                <button type="submit" class="send wow zoomIn"
-                                    style="animation-delay:1.2s; animation-duration: 1s;">
-                                    أرسل</button>
-                            </form>
+                            </div>
+                        
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
     </section>
 
@@ -401,8 +417,6 @@ a<html>
     <script type="text/javascript" src="assets/js/jquery.selectric.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery.prettyPhoto.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
-
-
 
 
 </body>

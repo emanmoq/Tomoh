@@ -95,7 +95,7 @@ jQuery(function ($) {
                 margin:5,
               },
               1000:{
-                items:4,
+                items:2,
                 margin:5,
               },
               1300:{
@@ -119,6 +119,9 @@ jQuery(function ($) {
                 items:2
               },
               1000:{
+                items:2
+              },
+              1300:{
                 items:4
               }
               }
@@ -130,16 +133,27 @@ jQuery(function ($) {
               loop:true,
               margin:17,
               rtl:true,
+            
             responsive:{
             0:{
-              items:1
+              items:1,
+              nav:false
             },
             600:{
-              items:2
+              items:2,
+              nav:false
+
             },
             1000:{
+              nav:true,
+              items:2
+            }
+            ,
+            1300:{
+              nav:true,
               items:4
             }
+            
             }
 
             });
@@ -156,6 +170,9 @@ jQuery(function ($) {
               items:2
             },
             1000:{
+              items:2
+            },
+            1300:{
               items:4
             }
             }
