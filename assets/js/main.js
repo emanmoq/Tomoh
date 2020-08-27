@@ -183,7 +183,16 @@ jQuery(function ($) {
                 'speedOut'		:	200, 
                 'overlayShow'	:	false
               });
+              $(".up").on("click",function(){$("html, body").animate({scrollTop:0},"slow");return false;});
+              $(".loginLang .searchFamily i").click(function(){
+                $(this).css("color", "#515151");
+                $(".loginLang .form-group .form-control").css({"width": "100%" ,  "border": "solid 1px #ebebeb;","padding": "10px"}); 
+              });
+
               
+             
+              
+
     
 });
 
