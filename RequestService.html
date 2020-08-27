@@ -200,24 +200,25 @@
                                 <h4 class="formRegTitle"> معلومات الشركة
                                 </h4>
                                 <div class="form-group">
-                                    <label for="name">الاسم (الثلاثي) </label>
-                                    <input type="text" class="form-control" placeholder="" id="name">
+                                    <label for="name">الاسم (الثلاثي) <span class="star">*</span> </label>
+                                    <input type="text" class="form-control" placeholder="أدخل الاسم" id="name" required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="type"> نوع النشاط </label>
-                                    <input type="text" class="form-control" placeholder="" id="type">
+                                    <label for="type"> نوع النشاط <span class="star">*</span> </label>
+                                    <input type="text" class="form-control" placeholder="نوع النشاط" id="type">
                                 </div>
                                 <div class="form-group">
-                                    <label for="address"> العنوان </label>
-                                    <input type="text" class="form-control" placeholder="" id="address">
+                                    <label for="address"> العنوان <span class="star">*</span> </label>
+                                    <input type="text" class="form-control" placeholder="العنوان" id="address">
                                 </div>
                                 <div class="form-group">
-                                    <label for="phoneNumber"> رقم الموبايل</label>
-                                    <input id="phoneNumber" type="text" value="" class="form-control">
+                                    <label for="phoneNumber"> رقم الموبايل <span class="star">*</span> </label>
+                                    <input id="phoneNumber" type="text" placeholder="0097 59****" class="form-control">
                                 </div>
                                 <div class="form-group">
-                                    <label for="email"> البريد الالكتروني</label>
-                                    <input id="email" type="text" value="" class="form-control">
+                                    <label for="email"> البريد الالكتروني <span class="star">*</span> </label>
+                                    <input id="email" type="text" placeholder="example@example.com"
+                                        class="form-control">
                                 </div>
                                 <div class="form-group">
                                     <label for="admin"> المسئول/القسم الذي يتم التواصل معه </label>
@@ -227,7 +228,7 @@
                                     <label for="box"> صندوق البريد </label>
                                     <input id="box" type="text" value="" class="form-control">
                                 </div>
-                              
+
                             </div>
                             <div class="personalInfo contactInfo clearfix">
                                 <h4 class="formRegTitle"> متطلبات الخدمة</h4>
@@ -242,10 +243,6 @@
                                         <option value='5'>استشارة وتخطيط</option>
 
                                     </select>
-                                </div>
-                                <div class="form-group">
-                                    <label> البريد الالكتروني </label>
-                                    <input type="mail" class="form-control" placeholder="">
                                 </div>
 
                                 <div class="form-group">
@@ -324,6 +321,9 @@
                                     <table class="CourseBox table-striped">
                                         <thead>
                                             <tr>
+                                                <th width=5%>
+                                                    No.
+                                                </th>
                                                 <th width=35%>
                                                     المهمة
                                                 </th>
@@ -337,7 +337,8 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td width=35%>
+                                                <td width=5%>1.</td>
+                                                <td width=30%>
                                                     <input type="text" value="" class="form-control">
                                                 </td>
                                                 <td width=35%>
@@ -348,7 +349,8 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td width=35%>
+                                                <td width=5%>2.</td>
+                                                <td width=30%>
                                                     <input type="text" value="" class="form-control">
                                                 </td>
                                                 <td width=35%>
@@ -358,30 +360,13 @@
                                                     <input type="number" value="" class="form-control">
                                                 </td>
                                             </tr>
-                                            <tr>
-                                                <td width=35%>
-                                                    <input type="text" value="" class="form-control">
-                                                </td>
-                                                <td width=35%>
-                                                    <input type="text" value="" class="form-control">
-                                                </td>
-                                                <td width=30%>
-                                                    <input type="number" value="" class="form-control">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td width=35%>
-                                                    <input type="text" value="" class="form-control">
-                                                </td>
-                                                <td width=35%>
-                                                    <input type="text" value="" class="form-control">
-                                                </td>
-                                                <td width=30%>
-                                                    <input type="number" value="" class="form-control">
-                                                </td>
-                                            </tr>
+                                            <tr class="lastTR" colspan="2"> <td> <a href="#" class="showmoreTable"> المزيد + </a></td> </tr>
+
                                         </tbody>
+
+
                                     </table>
+
                                 </div>
                                 <div class="form-group tableFormgroup" style="margin-top:20px">
                                     <label> المتطلبات الرئيسية
@@ -392,10 +377,10 @@
                                         <thead style="background-color: #fafafa;">
                                             <tr>
                                                 <th width=70%>
-                                                    من
+                                                    <input type="date" value="" class="form-control"> من
                                                 </th>
                                                 <th width=30%>
-                                                    إلى
+                                                    إلى <input type="date" value="" class="form-control">
                                                 </th>
 
                                             </tr>
@@ -452,7 +437,7 @@
                                     <div class="form-group selectsec">
                                         <label><br>
                                             الجنس</label>
-                                        <select data-placeholder="اختر السبب  ..." name="reason[]" class="chosen-select"
+                                        <select data-placeholder=" اختيار" name="reason[]" class="chosen-select"
                                             tabindex="2" multiple>
                                             <option value='1'> ذكر </option>
                                             <option value='2'>أنثى</option>
@@ -462,7 +447,7 @@
 
                                     <div class="form-group">
                                         <label for="name"> الجنسيات </label>
-                                        <select data-placeholder="اختر السبب  ..." name="reason[]" class="chosen-select"
+                                        <select data-placeholder="اختيار " name="reason[]" class="chosen-select"
                                             tabindex="2" multiple>
                                             <option value='2'>آيسلند</option>
                                             <option value='3'>أذربيجان</option>
@@ -764,17 +749,17 @@
                                     <div class="custom-file" style="display: inline-block;">
                                         <input type="file" class="custom-file-input" id="inputGroupFile01">
                                         <label class="custom-file-label" for="inputGroupFile01"
-                                            style="display: inline-block;"></label>   
+                                            style="display: inline-block;"></label>
                                     </div>
                                     <div class="custom-file" style="display: inline-block;">
                                         <input type="file" class="custom-file-input" id="inputGroupFile02">
                                         <label class="custom-file-label" for="inputGroupFile02"
-                                            style="display: inline-block;"></label>   
+                                            style="display: inline-block;"></label>
                                     </div>
                                     <div class="custom-file" style="display: inline-block;">
                                         <input type="file" class="custom-file-input" id="inputGroupFile03">
                                         <label class="custom-file-label" for="inputGroupFile03"
-                                            style="display: inline-block;"></label>   
+                                            style="display: inline-block;"></label>
                                     </div>
                                 </div>
                             </div>
