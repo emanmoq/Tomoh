@@ -3345,6 +3345,10 @@ right:96px;}
 .memberShipForm .form-group .form-control,.selectric-wrapper,.chzn-container,.custom-file{
     width:100% !important;
 }
+.CourseBox{
+float: none;
+width:100%;
+}
 .dropdown-menu.dropdownProfileMenu {
     width: 262px;
     background-color: white;
