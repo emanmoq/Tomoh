@@ -161,7 +161,7 @@ jQuery(function ($) {
               autoplay:true,
               loop:true,
              rtl:true,
-             margin:17,
+             margin:15,
             responsive:{
             0:{
               items:1
@@ -170,10 +170,12 @@ jQuery(function ($) {
               items:2
             },
             1000:{
-              items:2
+              items:2,
+              nav:true,
             },
             1300:{
-              items:4
+              items:4,
+              nav:true,
             }
             }
 

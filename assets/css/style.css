@@ -490,17 +490,19 @@ padding-top:13px;
 .newsSection{
     margin-top:35px;
     padding:10px;
-    animation: all .5s;
     border-radius: 6px;
     box-shadow: 5px 10px 30px 0 rgba(47, 46, 52, 0.12);
+    transition: all .3;
 }
 .newsSection:hover{
-
-    animation: all .5s;
+    animation: pulse;
+    box-shadow: 5px 15px 35px 0 rgba(47, 46, 52, 0.4);
+    transition: all .3s;
 }
 .newsSection:hover .newsTitle a{
   color:#f7941e;
   transition: all .5s;
+
 }
 .newsImg{
     width:20%;
@@ -581,10 +583,10 @@ text-align: right;
     color:black
 }
 .newsCar.owl-carousel .owl-stage{
-padding: 20px 15px ;
+padding: 15px  0;
 }
 .newsCar.owl-carousel .owl-stage-outer{
-    width:111%;
+    width:101%;
 }
 .newsCarItem.card .card-text{
     font-size:13px;;
@@ -598,9 +600,13 @@ padding: 20px 15px ;
 color:black;
 padding:20px;
 }
+.newsLatest.latest{
+    margin:10px;
+}
 /*****************/
 .newsTitle a{
     color:black;
+    animation: all .5s;
 }
 .newsLetters{
     position: absolute;
@@ -2898,19 +2904,21 @@ margin-top: 18px;
     margin-top:100px;
     position: relative;
     }
-    .ourTeamCar  .owl-nav button{
+    .newsCar .owl-nav button, .ourTeamCar  .owl-nav button{
         position: absolute;
         top:50%;
     }
-    .ourTeamCar  .owl-nav button.owl-next{
+    .newsCar .owl-nav button.owl-next, .ourTeamCar  .owl-nav button.owl-next{
         left:-10%;
     }
-    .ourTeamCar  .owl-nav button.owl-prev{
+    .newsCar  .owl-nav button.owl-prev ,.ourTeamCar  .owl-nav button.owl-prev{
         right:-10%;
-    }    .ourTeamCar  .owl-nav button:focus{
+    } 
+     .newsCar  .owl-nav button:focus,
+        .ourTeamCar  .owl-nav button:focus{
         outline: 0;
     }
-    .ourTeamCar  .owl-nav button span{
+    .newsCar  .owl-nav button span, .ourTeamCar  .owl-nav button span{
         color:#98014e;
         font-size: 80px;
         font-weight: bold;
