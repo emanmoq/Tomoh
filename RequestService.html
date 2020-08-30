@@ -975,10 +975,11 @@
     </script>
     <script>
         $("#showmoreTable").click(function () {
-            var no=$("#CourseBox tbody tr:last-child").find("td .No").text();
-            var newNo= no ++;
+            var no=parseInt($("#CourseBox tbody tr:last-child td .No").text());
+          no ++;
+           
             var html = '<tr>'
-            html += '<td width=5%>' + newNo  + '</td>';
+            html += '<td width=5%>' + '<span class="No">'+ no +'</span>' + '</td>';
             html += '<td width=35%>' + ' <input type="text" value=""  class="form-control">' + '</td>';
             html += '<td width=35%>' + ' <input type="text"  value="" class="form-control">' + '</td>';
             html += '<td width=30%>' + ' <input type="number" value=""  class="form-control">' + '</td>';
