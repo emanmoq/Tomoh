@@ -2165,9 +2165,9 @@ text-align: center;
 padding:10px;
 
 }
-tr.lastTR{
-    background-color: transparent;
-    border: 0;;
+.lastTR{
+    display: inline-block;
+    width:63%;
 }
 .CourseBox td{
     padding:10px;
