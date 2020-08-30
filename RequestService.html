@@ -18,6 +18,7 @@
     <link href="assets/css/selectric.css" rel="stylesheet">
     <link href="assets/css/chosen.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/fancy.min.css" rel="stylesheet">
 
 </head>
 
@@ -321,7 +322,7 @@
                                             /انشطة </span>
                                     </label>
                                     <div class="table-responsive">
-                                        <table id="CourseBox"class="CourseBox table-striped">
+                                        <table id="CourseBox" class="CourseBox table-striped">
                                             <thead>
                                                 <tr>
                                                     <th width=5%>
@@ -340,35 +341,26 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td width=5%>1.</td>
-                                                    <td width=30%>
-                                                        <input type="text" value="" class="form-control">
+                                                    <td width=5%><span class="No">1</span></td>
+                                                    <td width=35%>
+                                                        <input type="text" value="" id="tdinput1" class="form-control">
                                                     </td>
                                                     <td width=35%>
-                                                        <input type="text" value="" class="form-control">
+                                                        <input type="text" id="tdinput2" value="" class="form-control">
                                                     </td>
                                                     <td width=30%>
-                                                        <input type="number" value="" class="form-control">
+                                                        <input type="number" value="" id="tdinput3"
+                                                            class="form-control">
                                                     </td>
                                                 </tr>
-                                                <tr>
-                                                    <td width=5%>2.</td>
-                                                    <td width=30%>
-                                                        <input type="text" value="" class="form-control">
-                                                    </td>
-                                                    <td width=35%>
-                                                        <input type="text" value="" class="form-control">
-                                                    </td>
-                                                    <td width=30%>
-                                                        <input type="number" value="" class="form-control">
-                                                    </td>
-                                                </tr>
+
                                             </tbody>
                                         </table>
                                     </div>
-                                    <label> 
+                                    <label>
                                     </label>
-                                    <div class="lastTR"> <a href="javascript:;" id="showmoreTable"class="showmoreTable"> المزيد + </a> </div>
+                                    <div class="lastTR"> <a href="javascript:;" id="showmoreTable"
+                                            class="showmoreTable"> المزيد + </a> </div>
                                 </div>
                                 <div class="form-group tableFormgroup" style="margin-top:20px">
                                     <label> المتطلبات الرئيسية
@@ -982,20 +974,18 @@
                */
     </script>
     <script>
-                $("#showmoreTable").click(function(){
-                    var table = document.getElementById("CourseBox");
-            var row = table.insertRow(0);
-            var cell1 = row.insertCell(0);
-            var cell2 = row.insertCell(1);
-            var cell3 = row.insertCell(1);
-            
-            // Add some text to the new cells:
-            cell1.innerHTML = "";
-            cell2.innerHTML = " ";
-            cell3.innerHTML = " ";
-          })
+        $("#showmoreTable").click(function () {
+            var no=$("#CourseBox tbody tr:last-child").find("td .No").text();
+            var newNo= no ++;
+            var html = '<tr>'
+            html += '<td width=5%>' + newNo  + '</td>';
+            html += '<td width=35%>' + ' <input type="text" value=""  class="form-control">' + '</td>';
+            html += '<td width=35%>' + ' <input type="text"  value="" class="form-control">' + '</td>';
+            html += '<td width=30%>' + ' <input type="number" value=""  class="form-control">' + '</td>';
+            html += '</tr>';
+            $(this).parent().parent().find('#CourseBox tbody').append(html);
+        })
     </script>
-
 </body>
 
 </html>
