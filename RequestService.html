@@ -21,10 +21,8 @@
     <link href="assets/css/fancy.min.css" rel="stylesheet">
 
 </head>
-
 <body>
     <div class="overlay">
-
     </div>
     <header class="innerrNav">
         <div class="mobileNav d-lg-none d-md-block d-block clearfix">
@@ -741,20 +739,13 @@
                                 <div class="form-group">
                                     <label for="file"> اختر الملفات</label>
                                     <div class="custom-file" style="display: inline-block;">
-                                        <input type="file" class="custom-file-input" id="inputGroupFile01">
+                                        <input type="file" class="custom-file-input" id="inputGroupFile01" onchange=changeinput(this)> 
                                         <label class="custom-file-label" for="inputGroupFile01"
                                             style="display: inline-block;"></label>
                                     </div>
-                                    <div class="custom-file" style="display: inline-block;">
-                                        <input type="file" class="custom-file-input" id="inputGroupFile02">
-                                        <label class="custom-file-label" for="inputGroupFile02"
-                                            style="display: inline-block;"></label>
-                                    </div>
-                                    <div class="custom-file" style="display: inline-block;">
-                                        <input type="file" class="custom-file-input" id="inputGroupFile03">
-                                        <label class="custom-file-label" for="inputGroupFile03"
-                                            style="display: inline-block;"></label>
-                                    </div>
+                                </div>
+                                <div class="MoreFiles">
+                                    <a href="javascript:;" id="addMoreFiles">أضف ملفات أخرى </a>
                                 </div>
                             </div>
 
@@ -974,18 +965,36 @@
                */
     </script>
     <script>
+        //Add more hr table on click
         $("#showmoreTable").click(function () {
-            var no=parseInt($("#CourseBox tbody tr:last-child td .No").text());
-          no ++;
-           
+            // increase the first td by 1
+            var no = parseInt($("#CourseBox tbody tr:last-child td .No").text());
+            no++;
+
             var html = '<tr>'
-            html += '<td width=5%>' + '<span class="No">'+ no +'</span>' + '</td>';
+            html += '<td width=5%>' + '<span class="No">' + no + '</span>' + '</td>';
             html += '<td width=35%>' + ' <input type="text" value=""  class="form-control">' + '</td>';
             html += '<td width=35%>' + ' <input type="text"  value="" class="form-control">' + '</td>';
             html += '<td width=30%>' + ' <input type="number" value=""  class="form-control">' + '</td>';
             html += '</tr>';
             $(this).parent().parent().find('#CourseBox tbody').append(html);
-        })
+        });
+        // Add more input value on click 
+        $("#addMoreFiles").click(function () {
+            var addFile = '<div class="custom-file" style="display: inline-block;">';
+                addFile +=
+                '<input type="file" class="custom-file-input" onchange=changeinput(this)>';
+                addFile +=
+                '   <label class="custom-file-label" style="display: inline-block;"></label>';
+                addFile += ' </div>';
+            $(this).parent().parent().find(".form-group").append(addFile);
+
+        });
+        //take value of input file 
+         function  changeinput(e){
+         var value =$(e).val();
+        $(e).parent().find(".custom-file-label").text(value)
+        }
     </script>
 </body>
 

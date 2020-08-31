@@ -2047,10 +2047,11 @@ padding:50px 0;
     width:100%;
 }
 .custom-file-label::after{
-    content:"\f108";
+    content:"\e901";
     right: auto;
     left:0;
-    font-family:"Font Awesome 5 Brands";
+    font-weight: 900;;
+    font-family:LineIcons
 }
 .custom-file {
     position: relative;
@@ -2834,6 +2835,14 @@ color:#7c013f
     .blogdate H2{
         font-size:20px;
     }
+    .MoreFiles{
+        margin-top:50px;
+        width:35%;
+
+    }
+    .MoreFiles a{
+        color:#a23768;
+        }
     /**************************/
     .videoLessonSlider video{
         width:100%;
