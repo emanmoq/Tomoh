@@ -3211,6 +3211,10 @@ background-color: #97004e;
 .partnerItem {
     width: 70%;
     margin: auto;}
+    .partnerItem :hover .image_thumb.image_thumb{
+transform: scale(1.1);
+transition: all .5s;
+    }
    
     footer .footerSec {
         margin-top: 33px;
