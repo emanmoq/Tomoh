@@ -2657,6 +2657,22 @@ color:#7c013f;
     
 }
 .lessonVideoSection{
+    margin-top:50px;
+}
+.nextPrevLesson .next,.nextPrevLesson .prevs{
+    display: inline-block;
+}
+.nextPrevLesson .next a,.nextPrevLesson .prevs a{
+    color:#a23768;
+    margin:5px;
+}
+.nextPrevLesson{
+    margin-top:50px;
+}
+.profileMenu{
+    margin-top:25px;
+}
+.lessonVideoSection{
     width:100%;
     margin-bottom:50px;
     border-radius: 5px;
@@ -3004,7 +3020,18 @@ margin-top: 18px;
         top: 20px;
     }
     .searchFamily .form-group{
+        width:50%;
+        position: relative;
+    }
+    .searchFamily .filter .form-group{
+        width:28%;
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    .searchFamily .filter .selectric-wrapper{
         width:100%;
+    
     }
     .searchFamily .form-group .form-control{
         width:100%;
@@ -3018,6 +3045,12 @@ margin-top: 18px;
     .page-item .page-link i{
         color:black;
         font-size:15
+    }
+    .searchFamily .filter{
+        width:100%;
+        margin-top:20px;
+        display: block;
+        float: right;
     }
     .page-item:hover .page-link,.page-item:hover .page-link i{
         color:#A30F5C;
