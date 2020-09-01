@@ -2173,6 +2173,10 @@ input[type=number] {
 float: left;
 display: block;
 }
+#reg .CourseBox{
+    width:80%; 
+}
+
  .showmoreTable{
     font-size:16px;
     color:#98014e;
@@ -3149,8 +3153,24 @@ margin-top: 18px;
 .table{
     display: block;
 }
+thead ,tbody{
+    background-color: #fafafa;
+}
+.personalInfo div {
+    color:#a23768
+}
+#reg .memberShipForm .tableFormgroup.form-group .form-control.reqControl{
+    width:70%;
+}
+#reg   .personalInfo  .form-group  .CourseBox label{
+    width:20%;
+}
 @media(min-width:320px)and (max-width:767px){
-    .CourseBox{
+    #reg   .personalInfo  .form-group  .CourseBox label{
+        width:100%;
+        height:20px;
+    }
+    #reg .CourseBox  {
         width:100%;
         float: none;
     }
@@ -3241,6 +3261,7 @@ margin-right:0;
     .personalInfo .form-group label.profile{
         width:100%;
     }
+
     .margin-form-group{
         margin-right: 0;;
     }
@@ -3482,6 +3503,8 @@ right:96px;}
     width:100% !important;
 }
 .CourseBox{
+
+
 float: none;
 width:100%;
 }
