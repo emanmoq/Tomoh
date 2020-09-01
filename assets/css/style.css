@@ -975,10 +975,8 @@ color:white;
 .partnerItem{
     width:205px;
     height:200px;
+    overflow: hidden;
  
-}
-.partnerItem img{
-    height:100%;
 }
 
 .heroSlider .owl-nav {
@@ -2029,9 +2027,32 @@ padding:50px 0;
     color:#97004E
 }
 .gallery .partnerItem {
-    height:120px;
-    margin-bottom:70px;
+    height:210px;
+    margin-bottom:30px;
+    overflow: hidden;
 }
+\
+.gallery .partnerItem .image_thumbs.image_thumb:hover  img{
+    transform: scale(1.1);
+    animation:.5s all;
+}
+   .gallery .image_thumbs.image_thumb{
+       height:70%;
+   }
+   .gallery .image_thumbs.image_thumb img{
+       transition: all .5s;;
+   }
+   .gallery .partnerItem img {
+       height:auto;
+   }
+   .partnerItem img{
+       height:100%;
+   }
+   .gallery .partnerItem:hover .volunteerName{
+  animation: stretch;
+       animation-duration: .5s;;
+   }
+   
 .video .partnerItem{
     height:120px;
 }
@@ -3089,6 +3110,40 @@ margin-top: 18px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
 }
+.nav.nav-tabs{
+    margin-bottom:20px;
+    border-bottom: 0;
+}
+.nav.nav-tabs .nav-link.active::before{
+    background-color: transparent;
+    border:0 !important;
+    height:0;
+}
+.nav.nav-tabs .nav-link.active{
+    color:#a23768
+}
+#list .blogBox.Card.academyBox{
+    width:100%;
+    height: 220px;;
+}
+#list .card .cardImg{
+    width:50%;
+    float: right;
+    display: inline-block;
+    height:100%;
+}
+#list .card .card-body{
+    width:45%;
+    float: right;
+    display: inline-block;
+    margin-right:10px;
+}
+#list .blogBox.Card .card-body{
+    margin-bottom: 0;;
+}
+#list .card {
+    display: block !important;
+}
 @media(min-width:320px)and (max-width:767px){
     #innerPage h1.newsDetailsTitle, #innerPage .newsDate{
         width: 100%;
@@ -3244,10 +3299,8 @@ background-color: #97004e;
 .partnerItem {
     width: 70%;
     margin: auto;}
-    .partnerItem :hover .image_thumb.image_thumb{
-transform: scale(1.1);
-transition: all .5s;
-    }
+
+
    
     footer .footerSec {
         margin-top: 33px;
