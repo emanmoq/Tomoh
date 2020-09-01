@@ -3164,6 +3164,7 @@ thead ,tbody{
 #reg   .personalInfo  .form-group  .CourseBox label{
     width:20%;
 }
+
 @media(min-width:320px)and (max-width:767px){
     #reg   .personalInfo  .form-group  .CourseBox label{
         width:100%;
