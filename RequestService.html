@@ -21,6 +21,7 @@
     <link href="assets/css/fancy.min.css" rel="stylesheet">
 
 </head>
+
 <body>
     <div class="overlay">
     </div>
@@ -265,7 +266,7 @@
                                 <div class="form-group tableFormgroup">
                                     <label> دورة اعداد وتدريب </label>
                                     <div class="table-responsive">
-                                        <table class="CourseBox table-striped">
+                                        <table class="CourseBox table-striped table">
                                             <thead>
                                                 <tr>
                                                     <th width=50%>
@@ -320,7 +321,7 @@
                                             /انشطة </span>
                                     </label>
                                     <div class="table-responsive">
-                                        <table id="CourseBox" class="CourseBox table-striped">
+                                        <table id="CourseBox" class="CourseBox table-striped table">
                                             <thead>
                                                 <tr>
                                                     <th width=5%>
@@ -365,51 +366,53 @@
                                         <br>
 
                                     </label>
-                                    <table class="CourseBox">
-                                        <thead style="background-color: #fafafa;">
-                                            <tr>
-                                                <th width=50%>
-                                                    <input type="date" value="" class="form-control"> من
-                                                </th>
-                                                <th width=50%>
-                                                    إلى <input type="date" value="" class="form-control">
-                                                </th>
+                                    <div class="table-responsive">
+                                        <table class="CourseBox table">
+                                            <thead style="background-color: #fafafa;">
+                                                <tr>
+                                                    <th width=50%>
+                                                        <input type="date" value="" class="form-control"> من
+                                                    </th>
+                                                    <th width=50%>
+                                                        إلى <input type="date" value="" class="form-control">
+                                                    </th>
 
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td width="50%">
-                                                    <label class="tableLabel">التواريخ المطلوبة </label>
-                                                    <input type="date" value="" class="form-control reqControl">
-                                                </td>
-                                                <td width=50%>
-                                                    <input type="date" value="" class="form-control">
-                                                </td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td width="50%">
+                                                        <label class="tableLabel">التواريخ المطلوبة </label>
+                                                        <input type="date" value="" class="form-control reqControl">
+                                                    </td>
+                                                    <td width=50%>
+                                                        <input type="date" value="" class="form-control">
+                                                    </td>
 
-                                            </tr>
-                                            <tr>
-                                                <td width=50%>
-                                                    <label class="tableLabel"> الوقت المطلوب</label>
-                                                    <input type="text" value="" class="form-control reqControl">
-                                                </td>
-                                                <td width=50%>
-                                                    <input type="text" value="" class="form-control">
-                                                </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width=50%>
+                                                        <label class="tableLabel"> الوقت المطلوب</label>
+                                                        <input type="text" value="" class="form-control reqControl">
+                                                    </td>
+                                                    <td width=50%>
+                                                        <input type="text" value="" class="form-control">
+                                                    </td>
 
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <label class="tableLabel"> عدد الايام </label>
-                                                    <input type="text" value="" class="form-control reqControl">
-                                                </td>
-
-
-                                            </tr>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <label class="tableLabel"> عدد الايام </label>
+                                                        <input type="text" value="" class="form-control reqControl">
+                                                    </td>
 
 
-                                        </tbody>
-                                    </table>
+                                                </tr>
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                                 <div class="form-group another">
                                     <label class="textarealLabel"> معلومات وبيانات
@@ -739,7 +742,8 @@
                                 <div class="form-group">
                                     <label for="file"> اختر الملفات</label>
                                     <div class="custom-file" style="display: inline-block;">
-                                        <input type="file" class="custom-file-input" id="inputGroupFile01" onchange=changeinput(this)> 
+                                        <input type="file" class="custom-file-input" id="inputGroupFile01"
+                                            onchange=changeinput(this)>
                                         <label class="custom-file-label" for="inputGroupFile01"
                                             style="display: inline-block;"></label>
                                     </div>
@@ -982,18 +986,18 @@
         // Add more input value on click 
         $("#addMoreFiles").click(function () {
             var addFile = '<div class="custom-file" style="display: inline-block;">';
-                addFile +=
+            addFile +=
                 '<input type="file" class="custom-file-input" onchange=changeinput(this)>';
-                addFile +=
+            addFile +=
                 '   <label class="custom-file-label" style="display: inline-block;"></label>';
-                addFile += ' </div>';
+            addFile += ' </div>';
             $(this).parent().parent().find(".form-group").append(addFile);
 
         });
         //take value of input file 
-         function  changeinput(e){
-         var value =$(e).val();
-        $(e).parent().find(".custom-file-label").text(value)
+        function changeinput(e) {
+            var value = $(e).val();
+            $(e).parent().find(".custom-file-label").text(value)
         }
     </script>
 </body>

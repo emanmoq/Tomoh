@@ -549,12 +549,12 @@ display: inline-block;
 .newsDetailsDesc{
 display: inline-block;
 float: right;
-margin-left:20px;
-width:45%;
+margin-top:20px;
+width:100%;
 }
 .ProjImg{
     display: inline-block;
-    width:45%;
+    width:25%;
     float: left;
 }
 .newsDetailsDescpar{
@@ -2031,7 +2031,6 @@ padding:50px 0;
     margin-bottom:30px;
     overflow: hidden;
 }
-\
 .gallery .partnerItem .image_thumbs.image_thumb:hover  img{
     transform: scale(1.1);
     animation:.5s all;
@@ -2169,10 +2168,10 @@ input[type=number] {
     width:18%
 }
 .CourseBox{
-    width:75%;
     background-color:  #fafafa;;
     width:65%;
 float: left;
+display: block;
 }
  .showmoreTable{
     font-size:16px;
@@ -3044,6 +3043,9 @@ margin-top: 18px;
         width:50%;
         position: relative;
     }
+    .loginLang .searchFamily .form-group{
+        width:100%;
+    }
     .searchFamily .filter .form-group{
         width:28%;
         display: inline-block;
@@ -3144,7 +3146,14 @@ margin-top: 18px;
 #list .card {
     display: block !important;
 }
+.table{
+    display: block;
+}
 @media(min-width:320px)and (max-width:767px){
+    .CourseBox{
+        width:100%;
+        float: none;
+    }
     #innerPage h1.newsDetailsTitle, #innerPage .newsDate{
         width: 100%;
         float: right;
@@ -3451,6 +3460,20 @@ right:96px;}
 }
 .langTable{
     width:100%;
+}
+.newsCar.owl-carousel .owl-stage{
+    padding:0;
+}
+.newsCar.owl-carousel{
+    margin-bottom:20px;
+  
+}
+.newsDetailsSec {
+    margin-right:0;
+    padding:5px;
+}
+.newsSection {
+    margin-bottom:20px;
 }
 }
 @media(min-width:768px)and (max-width:1200px){

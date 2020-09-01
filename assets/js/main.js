@@ -181,7 +181,6 @@ jQuery(function ($) {
 
             });
            
-            
             $(".close").click(function(){
               $('.navbar-collapse').collapse("hide");
               $(".overlay").css("display","none");
