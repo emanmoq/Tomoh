@@ -2300,6 +2300,11 @@ color:#515151
     height:60px;
     overflow: hidden;
 }
+#list .blogBox.Card .card-body p{
+    height:95px;
+    margin-bottom:15px;
+    line-height:2;
+}
 .writerImg{
     width:40px;
     height:40px;
