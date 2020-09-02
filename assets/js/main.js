@@ -207,11 +207,10 @@ jQuery(function ($) {
                 $(".loginLang .form-group .form-control").css({"width": "100%" ,  "border": "solid 1px #ebebeb;","padding": "10px"}); 
               });
 
-              
-       
 
-  
-
+              if ($(".blogBox.Card .card-body p").innerHeight(60)){
+                $(".blogBox.Card .card-body p").append("....");
+              }
     
 });
 

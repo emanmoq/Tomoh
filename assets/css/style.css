@@ -44,6 +44,10 @@ img{
     transform: scale(1.1);
     animation: 1s all;
 }
+header{
+    animation:all .5s;
+    animation: sticky;
+}
 .topHeader{
     z-index: 0;
     padding-top:35px;
@@ -176,7 +180,7 @@ display: inline-block;
 .scrollNav {
     top: 0 !important;
     z-index: 555;
-    animation-duration: 1s;
+    animation-duration: .5s;
     background: #97004e;
     position: fixed !important;
     box-shadow: rgba(0, 0, 0, 0.1) 2px 3px 20px 3px;
@@ -186,6 +190,7 @@ display: inline-block;
     right:0;
     padding:10px 0;
     transition: all .5s;;
+    animation:sticky;
 }
 .dropdown-toggle::after{
     content:"\EA45";
@@ -522,7 +527,7 @@ font-size:24px;
 }
 .newsTitle {
     display:inline-block;
-    font-size:28px;
+    font-size:18px;
     color:#000000;
     font-family: a-jannat-lt-bold;
     margin-top:20px;
@@ -630,6 +635,8 @@ padding:20px;
     color: #515151;
     line-height: 2.5;
     width: 90%;
+    height:70px;
+    overflow: hidden;
 }
 .pagination{
     margin-top:60px;
@@ -1547,7 +1554,7 @@ button.navbar-toggler {
         background-color:#97004e;
         box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.1);
         padding:37px 0;
-        transition: all .5s;;
+        transition: all .5s;
         }
         .innerrNav.innerProfile{
             padding:0 0 10px;
@@ -1955,6 +1962,8 @@ transition: all .5s;;
     }
     .EventListDesc{
         padding: 30px 10px 30px 0;
+        height:340px;
+        overflow: hidden;
     }
     
     .EventListDesc h4 {
@@ -1968,6 +1977,8 @@ transition: all .5s;;
     .EventListDesc p{
         color: #777777;
         font-size: 16px;
+        height: 48px;
+        overflow: hidden;
     }
     .tail li {
         display: inline-block;
@@ -2043,9 +2054,11 @@ padding:50px 0;
    }
    .gallery .partnerItem img {
        height:auto;
+       transition: all .5s;
    }
    .partnerItem img{
        height:100%;
+       transition: all .5s;
    }
    .gallery .partnerItem:hover .volunteerName{
   animation: stretch;
@@ -2054,6 +2067,16 @@ padding:50px 0;
    
 .video .partnerItem{
     height:120px;
+    margin:20px 0;
+}
+.video .partnerItem:hover img{
+    transform: scale(1.1);
+    transition: all .5s;
+}
+
+.video .partnerItem:hover .image_thumbs.image_thumb{
+    overflow: hidden;
+    transition: all .5s;
 }
 .fancybox-wrap.fancybox-desktop.fancybox-type-iframe.fancybox-opened{
 
@@ -2274,6 +2297,8 @@ color:#515151
     font-size:14px;
     color:#9b9b9b;
     margin-bottom:25px;
+    height:60px;
+    overflow: hidden;
 }
 .writerImg{
     width:40px;
@@ -3132,7 +3157,7 @@ margin-top: 18px;
     height: 220px;;
 }
 #list .card .cardImg{
-    width:50%;
+    width:35%;
     float: right;
     display: inline-block;
     height:100%;
@@ -3149,9 +3174,7 @@ margin-top: 18px;
 #list .card {
     display: block !important;
 }
-.table{
-    display: block;
-}
+
 thead ,tbody{
     background-color: #fafafa;
 }
@@ -3171,7 +3194,25 @@ thead ,tbody{
 .videoLessonSlider video{
     height:116px;
 }
+.searchBtn{
+    background-color: #A30F5C;
+    color: wheat;
+    display: inline-block;
+  line-height: 49px;;
+    width:170px;
+    height:63px;
+    margin-right:20px
+}
+
+.searchResultText{
+    font-size:18px;
+    color:#a23768;
+    margin:50px 0;
+}
 @media(min-width:320px)and (max-width:767px){
+    .table{
+        display: block;
+    }
     #reg   .personalInfo  .form-group  .CourseBox label{
         width:100%;
         height:20px;
