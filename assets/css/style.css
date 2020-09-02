@@ -3552,6 +3552,30 @@ right:96px;}
 .newsSection {
     margin-bottom:20px;
 }
+.searchFamily .filter .form-group{
+    width:100%;
+    margin-bottom:20px;
+}
+.searchBtn{
+    width:100%;
+}
+.searchFamily .form-group{
+    width:100%;
+}
+#list .card .cardImg{
+    width:100%;
+    display: block;
+    float: none;
+    height:auto
+}
+#list .card .card-body{
+    width: 100%;;
+    display: block;
+    float: none;;
+}
+#list .blogBox.Card.academyBox{
+    height:auto
+}
 }
 @media(min-width:768px)and (max-width:1200px){
     .memberShipForm .form-group ,.memberShipForm .form-group label,
