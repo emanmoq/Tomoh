@@ -555,7 +555,11 @@ display: inline-block;
 display: inline-block;
 float: right;
 margin-top:20px;
-width:100%;
+width:45%;
+}
+.fotorama{
+    width:45%;
+    float: left;
 }
 .ProjImg{
     display: inline-block;
