@@ -3075,7 +3075,7 @@ margin-top: 18px;
         width:100%;
     }
     .searchFamily .filter .form-group{
-        width:28%;
+        width:26%;
         display: inline-block;
         margin-left: 20px;
     }
@@ -3196,12 +3196,12 @@ thead ,tbody{
 }
 .searchBtn{
     background-color: #A30F5C;
-    color: wheat;
+    color:white;
     display: inline-block;
-  line-height: 49px;;
-    width:170px;
-    height:63px;
-    margin-right:20px
+    line-height: 37px;
+    width: 133px;
+    height: 47px;
+   
 }
 
 .searchResultText{
