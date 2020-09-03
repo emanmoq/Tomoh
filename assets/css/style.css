@@ -3233,6 +3233,13 @@ thead ,tbody{
 .fotorama__stage{
     width: 100% !important;
 }
+.fotorama.fotorama--fullscreen .fotorama__img{
+    margin:auto !important;
+    left:auto !important;
+}
+.fotorama.fotorama--fullscreen  .fotorama__stage__shaft{
+width:60% !important;
+}
 @media(min-width:320px)and (max-width:767px){
     .table{
         display: block;
