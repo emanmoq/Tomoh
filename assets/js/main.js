@@ -11,10 +11,8 @@ jQuery(function ($) {
         
         
            }
-           else{
-              $('header').removeClass('scrollNav');    
-           }
-           if( scrollTop >$('header.innerProfile').height() -150){
+   
+           else if( scrollTop >$('header.innerProfile').height() -150){
             $("#counter").css("padding-top","150px");
              $('header.innerProfile').addClass('scrollNav');
        
