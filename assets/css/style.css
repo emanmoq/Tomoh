@@ -3219,6 +3219,20 @@ thead ,tbody{
     color:#a23768;
     margin:50px 0;
 }
+.fotorama__nav-wrap{
+    width:100% !important;
+    margin: auto;
+}
+.fotorama__stage.fotorama__pointer{
+    width: 100% !important;
+}
+
+.fotorama__wrap.fotorama__wrap--css3.fotorama__wrap--slide.fotorama__wrap--rtl.fotorama__wrap--toggle-arrows{
+    width:100% !important;
+}
+.fotorama__stage{
+    width: 100% !important;
+}
 @media(min-width:320px)and (max-width:767px){
     .table{
         display: block;
