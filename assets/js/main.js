@@ -14,7 +14,18 @@ jQuery(function ($) {
            else{
               $('header').removeClass('scrollNav');    
            }
+           if( scrollTop >$('header.innerProfile').height() - 100){
+            $("#counter").css("padding-top","150px");
+             $('header.innerProfile').addClass('scrollNav');
+       
+       
+          }
+          else{
+             $('header').removeClass('scrollNav');    
+          }
+        
           });
+
           function onScroll(event){
 			
             var scrollPosition = $(document).scrollTop();
