@@ -2068,7 +2068,7 @@ padding:50px 0;
   animation: stretch;
        animation-duration: .5s;;
    }
-   
+   .main_slider li{display: none;}
 .video .partnerItem{
     height:120px;
     margin:20px 0;
