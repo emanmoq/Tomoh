@@ -334,7 +334,7 @@ color:#F7941E;
     padding-bottom:80px;
     position: relative;
 }
-.tomohLetterleft{
+.tomohLetter{
     position: absolute;
     left:0;
     bottom: 0;
@@ -355,6 +355,12 @@ color:#F7941E;
     border-radius: 6px;
     border: solid 3px #ffffff;
     overflow: hidden;
+}
+.galleryImg:hover img{
+transform: scale(1.1);
+}
+.galleryImg{
+overflow: hidden;
 }
 .titleDetails{
     font-size: 20px;
@@ -992,6 +998,10 @@ color:white;
     height:200px;
     overflow: hidden;
  
+}
+.partnerItem:hover img{
+    
+    transition: pulse ;
 }
 
 .heroSlider .owl-nav {
@@ -3249,6 +3259,13 @@ thead ,tbody{
 width:60% !important;
 }
 @media(min-width:320px)and (max-width:767px){
+    .loginLang .searchFamily{
+        display: block;
+    }
+    .loginLang .searchFamily i{
+        left:auto;
+        right:7px;
+    }
     .table{
         display: block;
     }
@@ -3331,6 +3348,7 @@ float: none;
     .lang{
         display: block;
         margin-top:20px;
+        margin-right:0;
     }
     .loginLang{
         margin-top:10px;
