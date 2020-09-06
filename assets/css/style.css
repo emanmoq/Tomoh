@@ -2995,6 +2995,12 @@ margin-top: 18px;
         height:350px;
   
     }
+    .tomohLetterLeft{
+        position: absolute;
+        left:0;
+        bottom: 0;
+        width:35%;
+    }
     #howweArePage .tomohLetterRight{
         width:405px;
         height: 410px;
