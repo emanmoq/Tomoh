@@ -3265,6 +3265,9 @@ thead ,tbody{
 width:60% !important;
 }
 @media(min-width:320px)and (max-width:767px){
+    .profileSec::after, .profileSec.mobileProfile::after{
+        left:60px;
+    }
     .loginLang .searchFamily{
         display: block;
     }
