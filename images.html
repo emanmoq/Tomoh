@@ -196,22 +196,30 @@
                 <div class="partnerItem col-lg-2 col-md-4 col-6">
                     <ul class="main_slider">
                         <a class="image_thumbs image_thumb" rel="image_thumba" data-fancybox="images"
-                                href="assets/images/g1.png"><img src="assets/images/g1.png" alt="">
-                                <h4 class="volunteerName"> جائزةا لفوز </h4>
-                            </a>
-                            <li> <a class="image_thumbs image_thumb" rel="image_thumba" data-fancybox="images"
+                            href="assets/images/g1.png"><img src="assets/images/g1.png" alt="">
+                            <h4 class="volunteerName"> جائزةا لفوز </h4>
+                        </a>
+                        <li> <a class="image_thumbs image_thumb" rel="image_thumba" data-fancybox="images"
                                 href="assets/images/news1.png"><img src="assets/images/g1.png" alt="">
                             </a></li>
-                            <li> <a class="image_thumbs image_thumb" rel="image_thumba" data-fancybox="images"
+                        <li> <a class="image_thumbs image_thumb" rel="image_thumba" data-fancybox="images"
                                 href="assets/images/news2.png"><img src="assets/images/g1.png" alt="">
                             </a></li>
                     </ul>
                 </div>
                 <div class="partnerItem col-lg-2 col-md-4 col-6">
-                    <a class="image_thumbs image_thumb" rel="image_thumba" href="assets/images/g1.png"><img
-                            src="assets/images/g1.png" alt="">
-                        <h4 class="volunteerName"> جائزةا لفوز </h4>
-                    </a>
+                    <ul class="main_slider">
+                        <a class="image_thumbs image_thumb" rel="image_thumba" data-fancybox="images2"
+                            href="assets/images/g1.png"><img src="assets/images/g1.png" alt="">
+                            <h4 class="volunteerName"> جائزةا لفوز </h4>
+                        </a>
+                        <li> <a class="image_thumbs image_thumb" rel="image_thumba" data-fancybox="images2"
+                                href="assets/images/s1.png"><img src="assets/images/s1.png" alt="">
+                            </a></li>
+                        <li> <a class="image_thumbs image_thumb" rel="image_thumba" data-fancybox="images2"
+                                href="assets/images/s2.png"><img src="assets/images/s2.png" alt="">
+                            </a></li>
+                    </ul>
                 </div>
                 <div class="partnerItem col-lg-2 col-md-4 col-6">
                     <a class="image_thumbs image_thumb" rel="image_thumba" href="assets/images/g1.png"><img
@@ -430,9 +438,16 @@
     <script type="text/javascript" src="assets/js/main.js"></script>
 
 
-    <script>
 
+    <script type="text/javascript">
+       (".main_slider .image_thumbs").click(function () {
+            $(this).parent().fancybox({
+                // Options will go here
+            });
+        })
     </script>
+
+
 
 </body>
 
