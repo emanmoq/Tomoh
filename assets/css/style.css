@@ -3154,7 +3154,7 @@ margin-top: 18px;
     display: inline;
     position: fixed;
     bottom: 18px;
-    right: 15px;
+    left: 15px;
     text-decoration: none;
     text-align: center;
     z-index: 999;
