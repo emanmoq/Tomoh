@@ -1476,6 +1476,7 @@ button.navbar-toggler {
     opacity: .7;
     border:1px solid #f7941e;
     text-align: center;
+    margin-top:25px;
 }
 .mobileMenu i {
     animation: nav2 0.8s backwards;
