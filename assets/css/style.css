@@ -890,6 +890,10 @@ footer .footerSec:last-child{
 .links li:hover a{
     color:#F7941E
 }
+.footerList li:hover a{
+    color:#F7941E
+
+}
 .footerLogo{
     width:195px;
     margin:auto;
@@ -2177,7 +2181,7 @@ input[type=number] {
 }
     .loginInfo span.passwordHint {
         top:auto;
-        bottom: -10%;
+       BOTTOM:28%;
         
     }
 .contactInfo{
@@ -3575,7 +3579,7 @@ right:96px;}
     width:100% !important;
 }
 .loginInfo span.passwordHint{
-    bottom:2%;
+    bottom:33%;
 }
 .counterNum{
     font-size:45px
@@ -3682,7 +3686,7 @@ width:100%;
     width:100% !important;
 }
 .loginInfo span.passwordHint{
-    bottom:2%;
+    bottom:33%;
 }
     .nav-link:before{
         display:none;

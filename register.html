@@ -657,10 +657,9 @@
                   <span>اسم المستخدم يجب ان يكون من 3-20 حرفا</span>
                   <label> </label>
                   <input type="passsword" class="form-control" placeholder="كلمة المرور">
+                  <span class="passwordHint"> ينبغي أن تكون كلمة السر على الأقل 6 أحرف.  </span>
                   <label> </label>
                   <input type="passsword" class="form-control passwordInput" placeholder="تأكيد كلمة المرور">
-                  <span class="passwordHint"> ينبغي أن تكون كلمة السر على الأقل 6 أحرف.
-                  </span>
 
                 </div>
 
@@ -938,13 +937,13 @@
   <script type="text/javascript" src="assets/js/jquery.prettyPhoto.js"></script>
   <script type="text/javascript" src="assets/js/bundle.min.js"></script>
   <script type="text/javascript" src="assets/js/recaptcha__en.js"></script>
-<script>
-  $('.select').selectric({
-    disableOnMobile: false,
-    nativeOnMobile: false,
-    dir:"ltr"
-  });
-</script>
+  <script>
+    $('.select').selectric({
+      disableOnMobile: false,
+      nativeOnMobile: false,
+      dir: "ltr"
+    });
+  </script>
   <script type="text/javascript" src="assets/js/main.js"></script>
   <script type="text/javascript" src="assets/js/jquery1.js"></script>
   <script type="text/javascript" src="assets/js/chosen.js"></script>
@@ -969,7 +968,7 @@
         jQuery.browser.version = RegExp.$1;
       }
     })();
-    $("select.chosen-select").chosen({ rtl: true }); 
+    $("select.chosen-select").chosen({ rtl: true });
 
   </script>
 
