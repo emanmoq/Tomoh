@@ -2224,6 +2224,7 @@ display: block;
 }
 #reg .CourseBox{
     width:80%; 
+    display: table;
 }
 
  .showmoreTable{
@@ -3109,6 +3110,15 @@ margin-top: 18px;
         width:50%;
         position: relative;
     }
+    .searchFamily .form-group.EmptyBtn{
+        width:100%;
+    }
+    .searchFamily .form-group.EmptyBtn .form-control{
+        width:60%;
+    }
+    .searchFamily .form-group.EmptyBtn  i{
+        left:42%;
+    }
     .loginLang .searchFamily .form-group{
         width:100%;
     }
@@ -3241,6 +3251,7 @@ thead ,tbody{
     line-height: 37px;
     width: 133px;
     height: 47px;
+    float: left;
    
 }
 
