@@ -43,7 +43,7 @@ jQuery(function ($) {
             });
             $('.blogCarusel').owlCarousel({
               autoplay:true,
-              loop:true,
+              loop:false,
               margin:10,
         
            rtl:true,
@@ -70,7 +70,7 @@ jQuery(function ($) {
             });
             $('.heroSlider').owlCarousel({
               autoplay:true,
-              loop:true,
+              loop:false,
               margin:10,
               nav:true,
               dots:true,
@@ -81,7 +81,7 @@ jQuery(function ($) {
             setTimeout(function(){   
               $('.partnerSlider').owlCarousel({
                 autoplay:true,
-                loop:true,
+                loop:false,
                 margin:70,
                 dots:true,
                 rtl:true,
@@ -109,7 +109,7 @@ jQuery(function ($) {
               });
               $('.gallerySlider').owlCarousel({
                 autoplay:true,
-                loop:true,
+                loop:false,
                 margin:17,
                 nav:true,
                 rtl:true,
@@ -133,7 +133,7 @@ jQuery(function ($) {
             },1000);
             $('.ourTeamCar').owlCarousel({
               autoplay:true,
-              loop:true,
+              loop:false,
               margin:17,
               rtl:true,
             
@@ -162,7 +162,7 @@ jQuery(function ($) {
             });
             $('.newsCar').owlCarousel({
               autoplay:true,
-              loop:true,
+              loop:false,
              rtl:true,
              margin:15,
             responsive:{
