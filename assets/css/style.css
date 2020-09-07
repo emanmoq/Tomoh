@@ -1985,7 +1985,7 @@ transition: all .5s;;
     }
     .EventListDesc{
         padding: 30px 10px 30px 0;
-        height:400px;
+        height:340px;
         overflow: hidden;
     }
     
@@ -3282,6 +3282,12 @@ thead ,tbody{
 width:60% !important;
 }
 @media(min-width:320px)and (max-width:767px){
+    #howweArePage .tomohLetterRight{
+        display: none
+    }
+    .ourTeamcarItem{
+        width:auto;
+        height:auto;}
     .profileSec::after, .profileSec.mobileProfile::after{
         left:60px;
     }
@@ -3655,6 +3661,9 @@ right:96px;}
 }
 }
 @media(min-width:768px)and (max-width:1200px){
+    .ourTeamcarItem{
+        width:auto;
+        height:auto;}
     .memberShipForm .form-group ,.memberShipForm .form-group label,
 .memberShipForm .form-group .form-control,.selectric-wrapper,.chzn-container,.custom-file{
     width:100% !important;
