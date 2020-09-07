@@ -17,6 +17,7 @@
     <link href="assets/css/animation.css" rel="stylesheet">
     <link href="assets/css/selectric.css" rel="stylesheet">
     <link href="assets/css/chosen.css" rel="stylesheet">
+    <link href="assets/css/jquery-ui.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/fancy.min.css" rel="stylesheet">
 
@@ -282,19 +283,19 @@
                                                     <td width=50%>
                                                         <input type="text" value="" class="form-control">
                                                     </td>
-                                                    <td width=50% >
-                                                        <input type="date" value="" class="form-control">
+                                                    <td width=50%>
+                                                        <input type="text" class="form-control " id="datepicker">
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td width=50% >
+                                                    <td width=50%>
                                                         <input type="text" value="" class="form-control">
                                                     </td>
                                                     <td width=50%>
-                                                        <input type="date" value="" class="form-control">
+                                                        <input type="text" class="form-control " id="datepicker">
                                                     </td>
                                                 </tr>
-                                      
+
                                             </tbody>
                                         </table>
                                     </div>
@@ -357,15 +358,15 @@
                                                 <tr>
                                                     <th width=50%>
                                                         من
-                                                        <input type="date" value="" class="form-control"> 
+                                                        <input type="text" class="form-control " id="datepicker">
                                                     </th>
                                                     <th width=50%>
-                                                        إلى <input type="date" value="" class="form-control">
+                                                        إلى <input type="text" class="form-control " id="datepicker">
                                                     </th>
 
                                                 </tr>
                                             </thead>
-                       
+
                                         </table>
                                     </div>
                                 </div>
@@ -889,11 +890,18 @@
             dir: "ltr"
         });
     </script>
+
+
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script type="text/javascript" src="assets/js/jquery1.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-ui.js"></script>
     <script type="text/javascript" src="assets/js/chosen.js"></script>
     <script src="assets/js/waypoints-min.js"></script>
     <script type="text/javascript" src="assets/js/countUp.js"></script>
+    <script>
+            $("#datepicker").datepicker();
+    
+    </script>
     <!--
   <script type="text/javascript" src="assets/js/chosen.js"></script>
   <script type="text/javascript" src="assets/js/customInput.jquery.js"></script>

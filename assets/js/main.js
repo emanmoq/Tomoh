@@ -214,6 +214,7 @@ jQuery(function ($) {
               if ($(".blogBox.Card .card-body p").innerHeight(60)){
                 $(".blogBox.Card .card-body p").append("....");
               }
-    
+          
+              
 });
 
