@@ -3225,6 +3225,7 @@ thead ,tbody{
 .videoLessonSlider h4{
     color:#a23768;
     font-size:18px;
+    height:50px;
 }
 .videoLessonSlider video{
     height:116px;
