@@ -3299,6 +3299,9 @@ width:60% !important;
     overflow-y: scroll;
 }
 @media(min-width:320px)and (max-width:767px){
+    .BlogDetaisImg {
+        width: 100%;
+        margin-bottom: 20px;}
     .searchFamily .form-group.EmptyBtn .form-control{
         width:100%;
     }
@@ -3878,4 +3881,3 @@ section{
 }
 
 
-}
