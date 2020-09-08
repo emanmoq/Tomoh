@@ -3733,6 +3733,9 @@ right:96px;}
     }
 }
 @media(min-width:768px)and (max-width:1000px){
+    .pagination{
+        display: inline-flex;
+    }
     .EventCont .EventImg{
         height:50%;
     }
@@ -3947,6 +3950,9 @@ section{
     }
 }
 @media(min-width:1001px)and (max-width:1366px){
+    .pagination{
+        display: inline-flex;
+    }
     .EventCont .EventImg{
         height:50%;
     }
