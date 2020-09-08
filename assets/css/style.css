@@ -125,7 +125,7 @@ margin-left:7px;
 
 }
 .langdrop.dropdown-toggle::after{
-    left: -16px;
+    left: -16px ;
     position: absolute;
     bottom: 3px;
 }
@@ -3298,7 +3298,17 @@ width:60% !important;
     height: 50px !important;
     overflow-y: scroll;
 }
+.mobileNav{
+
+    display: none;
+    }
+    .navbar.navbar-expand-lg{
+        display: none;;
+    }
 @media(min-width:320px)and (max-width:767px){
+    .navbar.navbar-expand-lg{
+        display: block;;
+    }
     .searchFamily .filter .form-group.EmptyBtn{
         width:100%;
         margin-top:20px;
@@ -3696,8 +3706,25 @@ right:96px;}
 #list .blogBox.Card.academyBox{
     height:auto
 }
+.mobileNav{
+
+    display: block;
+    }
 }
-@media(min-width:768px)and (max-width:1023px){
+@media(min-width:768px)and (max-width:1000px){
+    .langdrop.dropdown-toggle::after{
+        bottom:0;
+        right:108%;
+    }
+    .mobileNav{
+
+    display: block;
+    }   
+     .navbar.navbar-expand-lg{
+        display: block;
+    }
+
+  
     .searchBtn{
         margin:20px;
         margin-left: 0;
@@ -3889,7 +3916,7 @@ section{
         margin-bottom:20px;
     }
 }
-@media(min-width:1024px)and (max-width:1366px){
+@media(min-width:1001px)and (max-width:1366px){
 
     .searchBtn{
         width:125px;
