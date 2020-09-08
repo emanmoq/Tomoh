@@ -3877,14 +3877,5 @@ section{
     }
 }
 
-@media(min-width:1024px)and (max-width:1366px){
-    .mobileNav.d-lg-none{
-        display: block !important;
-    }
-    .topHeader.d-lg-block.d-none{
-        display: none !important;
-    }
-    .scrollNav{
-        padding:0;
-    }
+
 }
