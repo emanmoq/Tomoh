@@ -163,7 +163,7 @@ jQuery(function ($) {
 
       },
       1000: {
-        nav: true,
+        nav: false,
         items: 2
       }
       ,

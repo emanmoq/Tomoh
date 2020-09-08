@@ -3700,8 +3700,11 @@ right:96px;}
 @media(min-width:768px)and (max-width:1023px){
     .searchBtn{
         margin:20px;
-        margin-left: 0;;
+        margin-left: 0;
+        width:200px;
     }
+    .searchFamily .filter .form-group {
+        width: 30%;}
     .form-group.EmptyBtn .searchBtn{
         margin:0;
     }
