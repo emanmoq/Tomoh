@@ -3318,7 +3318,8 @@ display: none;
 
 @media(min-width:320px)and (max-width:767px){
     .EventCont .EventImg{
-        height:50%;
+        height:55%;
+        overflow: hidden;
     }
     #mobileHeader{
         display: block;
@@ -3737,7 +3738,8 @@ right:96px;}
         display: inline-flex;
     }
     .EventCont .EventImg{
-        height:50%;
+        height:55%;
+        overflow: hidden;
     }
     #mobileHeader{
         display: block;
@@ -3954,9 +3956,9 @@ section{
         display: inline-flex;
     }
     .EventCont .EventImg{
-        height:50%;
+        height:55%;
+        overflow: hidden;
     }
-
     .searchBtn{
         width:125px;
     }
