@@ -3305,7 +3305,13 @@ width:60% !important;
     .navbar.navbar-expand-lg{
         display: block;;
     }
+    #mobileTopHeader{
+display: block;
+    }
 @media(min-width:320px)and (max-width:767px){
+    #mobileTopHeader{
+        display: none;;
+    }
     .navbar.navbar-expand-lg{
         display: block;;
     }
@@ -3712,6 +3718,9 @@ right:96px;}
     }
 }
 @media(min-width:768px)and (max-width:1000px){
+    #mobileTopHeader{
+        display: none;;
+    }
     .langdrop.dropdown-toggle::after{
         bottom:0;
         right:108%;
