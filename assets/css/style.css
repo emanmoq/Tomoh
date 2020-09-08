@@ -3690,7 +3690,7 @@ right:96px;}
     height:auto
 }
 }
-@media(min-width:768px)and (max-width:1200px){
+@media(min-width:768px)and (max-width:1023px){
     .searchBtn{
         margin:20px;
         margin-left: 0;;
@@ -3879,5 +3879,162 @@ section{
         margin-bottom:20px;
     }
 }
+@media(min-width:1024px)and (max-width:1366px){
+    .searchBtn{
+        margin:20px;
+        margin-left: 0;;
+    }
+    .form-group.EmptyBtn .searchBtn{
+        margin:0;
+    }
+
+    .logo{
+        margin-left:50px;
+    }
+    .ourTeamcarItem{
+        width:auto;
+        height:auto;}
+    .memberShipForm .form-group ,.memberShipForm .form-group label,
+.memberShipForm .form-group .form-control,.selectric-wrapper,.chzn-container,.custom-file{
+    width:100% !important;
+}
+.CourseBox{
 
 
+float: none;
+width:100%;
+}
+.dropdown-menu.dropdownProfileMenu {
+    width: 262px;
+    background-color: white;
+    right: -27% !important;}
+    .arrow-up {
+  
+   
+        right: 25%;
+       }
+.loginInfo span {
+
+    right: 0;
+    top: 34%;
+}
+.loginInfo .form-control.passwordInput{
+    margin-bottom: 30px;
+
+}
+.footerreg  .btn{
+    margin-top:20px;
+}
+.footerreg {
+    float: none;
+}
+.saveBtn,.regSendBtn {
+    width:90px;
+    font-size:12px;
+}
+.g-recaptcha div{
+    width:100% !important;
+}
+.loginInfo span.passwordHint{
+    bottom:33%;
+}
+    .nav-link:before{
+        display:none;
+    }
+
+.newsImg{
+    width:100%;
+}.videoCont{
+    overflow: visible;
+}
+
+.loginLang{
+    margin-top:20px;
+} 
+.lang {
+    display: inline-block;
+    margin-right: 25px;
+    margin-left: 72px;}
+
+#navbarNav .nav-link.active{
+    color:#f7941e;
+}
+.overlay{
+background-color:#000;
+opacity: .2;
+z-index: 222;
+width:100%;
+height:100%;
+left:0;
+top:0;
+right:0;
+position: absolute;
+display: none;
+}
+.mobileNav{
+    padding:10px;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    font-size:13px;
+    padding-right:9px;
+    padding-left:9px;
+}
+.topHeader{
+    padding:0;
+}
+.box{
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+section{
+    padding:50px 0 !important
+}
+
+.gallerySlider .owl-nav{
+    bottom:-15px;
+    left:45%;
+}
+.newsSection {
+    margin-top:10px;
+}
+.partnerSlider .owl-dots {
+    bottom: -34px;
+     left: auto; 
+    width: 100%;
+}
+.eventList h5{
+    margin-bottom:0;
+    font-size:22px;
+}
+.eventList{
+    padding:10px;
+}
+.eventList ul li a {
+    font-size: 18px;}
+    .eventList ul li{
+        padding:10px 0;
+    }
+    .EventImg{
+        height:auto
+    }
+    .form-group{
+        margin-bottom:0
+    }
+    .form-control{
+        height:55px;
+        width:100%;
+        margin-bottom:10px;
+    }
+ 
+    .footerSec{
+        margin-bottom:20px;
+    }
+    .dropdown-toggle::after {
+        right: 92%;
+        font-size: 9px;
+    }
+    .footerList li a {
+        font-size: 15px;}
+
+}
