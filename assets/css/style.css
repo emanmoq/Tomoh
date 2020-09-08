@@ -3113,6 +3113,9 @@ margin-top: 18px;
     .searchFamily .form-group.EmptyBtn{
         width:100%;
     }
+    .form-group.EmptyBtn{
+        float: none;
+    }
     .searchFamily .form-group.EmptyBtn .form-control{
         width:60%;
     }
