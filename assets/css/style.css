@@ -3285,6 +3285,10 @@ thead ,tbody{
 .fotorama.fotorama--fullscreen  .fotorama__stage__shaft{
 width:60% !important;
 }
+.chzn-container-multi .chzn-choices{
+    height: 50px !important;
+    overflow-y: scroll;
+}
 @media(min-width:320px)and (max-width:767px){
     .searchFamily .form-group.EmptyBtn .form-control{
         width:100%;
