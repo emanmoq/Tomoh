@@ -118,6 +118,9 @@ border:0
 display: inline-block;
 margin-left:7px;
 }
+.loginLang{
+    margin-top:20px;
+}
 .langdrop{
     font-size:13px;
     color:white;
@@ -3311,6 +3314,7 @@ display: block;
     #mobileHeader{
 display: none;
     }
+
 @media(min-width:320px)and (max-width:767px){
     #mobileHeader{
         display: block;
