@@ -3123,11 +3123,13 @@ margin-top: 18px;
         width:100%;
     }
     .searchFamily .filter .form-group{
-        width:26%;
+        width:20%;
         display: inline-block;
-        margin-left: 20px;
+        margin-left: 15px;
     }
-
+.searchFamily .filter .form-group.EmptyBtn .searchBtn{
+    background-color: #F7941E;
+}
     .searchFamily .filter .selectric-wrapper{
         width:100%;
     
@@ -3249,7 +3251,7 @@ thead ,tbody{
     color:white;
     display: inline-block;
     line-height: 37px;
-    width: 133px;
+    width: 120px;
     height: 47px;
     float: left;
    
