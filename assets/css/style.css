@@ -3297,7 +3297,7 @@ width:60% !important;
     }
     .ourTeamcarItem{
         width:auto;
-        height:auto;}
+        height:350px;}
     .profileSec::after, .profileSec.mobileProfile::after{
         left:60px;
     }
