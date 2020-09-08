@@ -3175,6 +3175,7 @@ margin-top: 18px;
     }
     .pagination  .page-item{
         margin: 15px;
+        height:auto;
     }
     .fancybox-overlay.fancybox-overlay-fixed{
     }
@@ -3407,6 +3408,7 @@ display: none;
     }
     .pagination .page-item{
         margin:0;
+        
     }
     .newsImg{
         width:100%;
