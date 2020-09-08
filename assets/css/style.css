@@ -3123,12 +3123,18 @@ margin-top: 18px;
         width:100%;
     }
     .searchFamily .filter .form-group{
-        width:20%;
+        width:21%;
         display: inline-block;
         margin-left: 15px;
     }
+    .form-group.EmptyBtn{
+        float: none;
+    }
 .searchFamily .filter .form-group.EmptyBtn .searchBtn{
     background-color: #F7941E;
+}
+.searchFamily .filter .form-group.EmptyBtn {
+    width:130px;
 }
     .searchFamily .filter .selectric-wrapper{
         width:100%;
@@ -3253,10 +3259,10 @@ thead ,tbody{
     color:white;
     display: inline-block;
     line-height: 37px;
-    width: 120px;
+    width: 130px;
     height: 47px;
-    float: left;
-   
+    margin-right:20px;
+
 }
 
 .searchResultText{
