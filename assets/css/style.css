@@ -3299,6 +3299,13 @@ width:60% !important;
     overflow-y: scroll;
 }
 @media(min-width:320px)and (max-width:767px){
+    .searchFamily .filter .form-group.EmptyBtn{
+        width:100%;
+        margin-top:20px;
+    }
+    .searchBtn{
+        margin-right:0;
+    }
     .BlogDetaisImg {
         width: 100%;
         margin-bottom: 20px;}
@@ -3880,12 +3887,9 @@ section{
     }
 }
 @media(min-width:1024px)and (max-width:1366px){
+
     .searchBtn{
-        margin:20px;
-        margin-left: 0;;
-    }
-    .form-group.EmptyBtn .searchBtn{
-        margin:0;
+        width:125px;
     }
 
     .logo{
