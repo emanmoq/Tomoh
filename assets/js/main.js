@@ -110,8 +110,11 @@ jQuery(function ($) {
           margin: 5,
         },
         1000: {
-          items: 2,
+          items: 3,
           margin: 5,
+        },
+        1200:{
+          items: 4, 
         },
         1300: {
           items: 4,
