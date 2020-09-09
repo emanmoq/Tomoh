@@ -164,7 +164,7 @@ jQuery(function ($) {
       },
       1000: {
         nav: false,
-        items: 4
+        items:3
       }
       ,
       1300: {
