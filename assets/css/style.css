@@ -3951,7 +3951,7 @@ section{
         margin-bottom:20px;
     }
 }
-@media(min-width:1001px)and (max-width:1366px){
+@media(min-width:1001px)and (max-width:1300px){
     .pagination{
         display: inline-flex;
     }
