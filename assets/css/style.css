@@ -3315,6 +3315,9 @@ display: block;
     #mobileHeader{
 display: none;
     }
+    #contactadminBody .profileMenu{
+margin-top:0
+    }
 
 @media(min-width:320px)and (max-width:767px){
     .EventCont .EventImg{
@@ -3733,7 +3736,16 @@ right:96px;}
     display: block;
     }
 }
+
 @media(min-width:768px)and (max-width:1000px){
+    .profileMenu.sideProfileMenu{
+        margin-top:0
+            }
+    .adminForm .form-group {
+        width: 100%;
+    }
+    .admminmarginRight.form-group{
+    margin-right: 0;}
     .pagination{
         display: inline-flex;
     }
@@ -3952,6 +3964,13 @@ section{
     }
 }
 @media(min-width:1001px)and (max-width:1300px){
+    .profileMenu.sideProfileMenu{
+        margin-top:0
+            }
+    
+    .admminmarginRight.form-group {
+        margin-right: 50px;
+    }
     .pagination{
         display: inline-flex;
     }
