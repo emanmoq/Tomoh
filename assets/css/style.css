@@ -3354,8 +3354,8 @@ display: none;
         display: none
     }
     .ourTeamcarItem{
-        width:auto;
-        height:350px;}
+        width:300px;
+        height:300px;}
     .profileSec::after, .profileSec.mobileProfile::after{
         left:60px;
     }
@@ -3775,8 +3775,8 @@ right:96px;}
         margin-left:50px;
     }
     .ourTeamcarItem{
-        width:auto;
-        height:auto;}
+        width:255px;
+        height:255px;}
     .memberShipForm .form-group ,.memberShipForm .form-group label,
 .memberShipForm .form-group .form-control,.selectric-wrapper,.chzn-container,.custom-file{
     width:100% !important;
@@ -3968,8 +3968,8 @@ section{
         margin-left:50px;
     }
     .ourTeamcarItem{
-        width:auto;
-        height:auto;}
+        width:255px;
+        height:255px;}
     .memberShipForm .form-group ,.memberShipForm .form-group label,
 .memberShipForm .form-group .form-control,.selectric-wrapper,.chzn-container,.custom-file{
     width:100% !important;
