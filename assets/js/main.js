@@ -151,7 +151,6 @@ jQuery(function ($) {
     loop: false,
     margin: 17,
     rtl: true,
-
     responsive: {
       0: {
         items: 1,
@@ -159,21 +158,21 @@ jQuery(function ($) {
       },
       600: {
         items: 2,
-        nav: false
+        nav: true,
+        margin: 5,
 
       },
       1000: {
-        nav: false,
-        items:3
+        nav: true,
+        items:3,
+        margin: 5,
       }
       ,
       1300: {
         nav: true,
         items: 4
       }
-
     }
-
   });
   $('.newsCar').owlCarousel({
     autoplay: true,

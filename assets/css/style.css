@@ -889,6 +889,7 @@ footer .footerSec:last-child{
 }
 .footerList li {
     margin-bottom:25px;
+    text-align: right;
 }
 .links li:hover a{
     color:#F7941E
@@ -3962,12 +3963,30 @@ section{
     .footerSec{
         margin-bottom:20px;
     }
+
+.newsCar .owl-nav button.owl-prev, .ourTeamCar .owl-nav button.owl-prev{
+right:-27px;
+}
+.newsCar .owl-nav button.owl-next, .ourTeamCar .owl-nav button.owl-next{
+    left:0;
+}
+.ourTeamcarItem{
+    margin:auto;
+}
 }
 @media(min-width:1001px)and (max-width:1300px){
     .profileMenu.sideProfileMenu{
         margin-top:0
             }
-    
+            .newsCar .owl-nav button.owl-prev, .ourTeamCar .owl-nav button.owl-prev{
+right:-27px;
+            }
+            .newsCar .owl-nav button.owl-next, .ourTeamCar .owl-nav button.owl-next{
+                left:0;
+            }
+            .ourTeamcarItem{
+                margin:auto;
+            }
     .admminmarginRight.form-group {
         margin-right: 50px;
     }
