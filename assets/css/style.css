@@ -1946,6 +1946,7 @@ transition: all .5s;;
         position: relative;
         z-index: 2;
         height:100%;
+        margin-bottom:0;
 
     }
     .EventImg figure {
@@ -1989,7 +1990,7 @@ transition: all .5s;;
     }
     .EventListDesc{
         padding: 7px 10px 30px 0;
-        height:340px;
+        height:370px;
         overflow: hidden;
     }
     
@@ -2003,9 +2004,9 @@ transition: all .5s;;
     }
     .EventListDesc p{
         color: #777777;
-        font-size: 16px;
-        height: 48px;
+        font-size: 14px;
         overflow: hidden;
+        margin-bottom:0;
     }
     .tail li {
         display: inline-block;
@@ -2040,24 +2041,25 @@ opacity: 1;
 {
     display: inline-block;
     margin-right:10px;
-    max-width: 48%;
+ width:60%;
     overflow: hidden;
+    margin-top:20px
 }
 .EventListDetails.mzero{
     margin-right:0;
+    width:35%;
 }
-
 .EventListDetails  li{
     display: block;
     max-width: 100%;;
+    margin-bottom:10px;
 }
-.EventListDetails label{
+.EventListDetails h6{
     color:#7c013f;
-    margin-left:10px;
+    margin-bottom:5px;
 }
 .EventListDetails span{
     color:#777777;
-
 }
 #EventsBody{
 padding:50px 0;
