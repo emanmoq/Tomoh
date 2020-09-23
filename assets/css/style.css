@@ -1940,14 +1940,13 @@ transition: all .5s;;
     }
     .EventCont .EventImg {
         width: 100%;
-        height:300px;
-        margin-bottom:20px;
+        height:auto;
+        margin-bottom:10px;
     }
     .EventImg figure {
         position: relative;
         z-index: 2;
         margin-bottom:0;
-
     }
 
     .EventImg figure:before {
@@ -3327,7 +3326,7 @@ margin-top:0
         width:100%;
     }
     .EventCont .EventImg{
-        
+        height: auto;
         overflow: hidden;
     }
     #mobileHeader{
@@ -3571,7 +3570,6 @@ padding:5;
         .EventImg {
             width: 100%;
             height: auto;
-            margin-top:10px;
         }
         .eventList h5 {
             font-size: 30px;
