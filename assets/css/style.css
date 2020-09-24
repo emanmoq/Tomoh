@@ -3786,7 +3786,7 @@ right:96px;}
 
   
     .searchBtn{
-        margin:20px;
+        margin:20px 5px;
         margin-left: 0;
         width:200px;
     }
@@ -3794,6 +3794,9 @@ right:96px;}
         width: 30%;}
     .form-group.EmptyBtn .searchBtn{
         margin:0;
+    }
+    .form-group.EmptyBtn{
+        margin:20px 5px;
     }
 
     .logo{
