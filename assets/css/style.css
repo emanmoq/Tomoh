@@ -3143,7 +3143,6 @@ margin-top: 18px;
 }
 .searchFamily .filter .form-group.EmptyBtn {
     width:130px;
-    margin:20px 5px;
 }
     .searchFamily .filter .selectric-wrapper{
         width:100%;
@@ -3795,6 +3794,9 @@ right:96px;}
         width: 30%;}
     .form-group.EmptyBtn .searchBtn{
         margin:0;
+    }
+    .searchFamily .filter .form-group.EmptyBtn .searchBtn{
+        margin:20px;
     }
  
     .logo{
