@@ -3791,7 +3791,14 @@ right:96px;}
         width:200px;
     }
     .searchFamily .filter .form-group {
-        width: 30%;}
+        width: 30%;
+    float:none}
+    .searchFamily{
+        width:100%;
+    }
+    .searchFamily .filter{
+        width:100%;
+    }
     .form-group.EmptyBtn .searchBtn{
         margin:0;
     }
