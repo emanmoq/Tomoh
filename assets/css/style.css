@@ -217,6 +217,7 @@ display: inline-block;
 }
 .dropdown .dropdown-menu{
     transition: slideIn .5s;
+z-index:999999999999;
 }
 .navbar-expand-lg .navbar-nav .dropdown-menu{
     text-align: right;
