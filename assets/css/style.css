@@ -132,6 +132,7 @@ margin-left:7px;
     position: absolute;
     bottom: 3px;
 }
+
 .langdrop.dropdown-toggle:hover,.langdrop.dropdown-toggle:hover .loginLang i{
     color:#f7941e;
 }
@@ -221,6 +222,7 @@ z-index:999999999999;
 }
 .navbar-expand-lg .navbar-nav .dropdown-menu{
     text-align: right;
+    z-index: 999999999999999;
 }
 .dropdown-item:hover{
 background-color: #A30F5C;
