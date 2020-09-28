@@ -909,8 +909,12 @@ footer .footerSec:last-child{
     margin-bottom:10px;
     text-align: center;
 }
+footer .footerSocial{
+    text-align: center;
+}
 .footerSec .footerLogo p{
-    font-size: 12px;;
+    font-size: 12px;
+    color:white;
 }
 .footerSec h4{
     font-size:24px;
